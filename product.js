@@ -1,4 +1,5 @@
 
+
 let womenTopWear = [
     {
         brand: "BOSSINI",
@@ -590,4 +591,38 @@ function showProducts(data) {
         displayProductDiv.append(card);
     });
 }
-showProducts(Shoes);
+
+let variables = JSON.parse(localStorage.getItem('variables'));
+var subCategory = variables[variables.length-1];
+subCategory = subCategory.toLowerCase();
+// console.log(subCategory);
+
+if(subCategory == 'tops'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'ethnicwear'){
+    showProducts(womenEthnicWear);
+}else if(subCategory == 'ethnicwear'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'bottoms'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'dresses & jumpsuits'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'lingerie & nightwear'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'sportswear'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'wfh edit'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'beauty'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'watches'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'sunglases'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'footwear & bags'){
+    showProducts(womenTopWear);
+}
+
+localStorage.setItem('variables', JSON.stringify(variables));
+
+
