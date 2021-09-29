@@ -184,91 +184,7 @@ let womenEthnicWear = [
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_05-2100.jpg']
     }
 ];
-let Shoes = [
-    {
-        brand: "FILA",
-        category: "sports shoes",
-        price: "1499",
-        discount: "50",
-        color: ['black', 'white', 'pink'
-        ],
-        sizes: ['8-UK', '7-Uk', '9-UK'
-        ],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_05-2100.jpg']
-    },
-    {
-        brand: "FILA",
-        category: "sports shoes",
-        price: "1819",
-        discount: "10",
-        color: ['black', 'white', 'yellow'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_05-2100.jpg']
-    },
-    {
-        brand: "ADIDAS",
-        category: "sports shoes",
-        price: "4299",
-        discount: "30",
-        color: ['white', 'black', 'pink'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_05-2100.jpg']
-    },
-    {
-        brand: "ADIDAS",
-        category: "sports shoes",
-        price: "4999",
-        discount: "20",
-        color: ['red', 'black', 'pink'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_06-2100.jpg']
-    },
-    {
-        brand: "REEBOK",
-        category: "sports shoes",
-        price: "3799",
-        discount: "15",
-        color: ['black', 'brown', 'green'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_04-2100.jpg']
-    },
-    {
-        brand: "CODE",
-        category: "loffers",
-        price: "1549",
-        discount: "50",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_06-2100.jpg']
-    },
-    {
-        brand: "CODE",
-        category: "loffers",
-        price: "2049",
-        discount: "50",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_06-2100.jpg']
-    },
-    {
-        brand: "CODE",
-        category: "sandals",
-        price: "1049",
-        discount: "10",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Brown-1000010222744_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Black-1000010222744_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Black-1000010222744_06-2100.jpg',]
-    },
-    {
-        brand: "CODE",
-        category: "sandals",
-        price: "1299",
-        discount: "15",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_06-2100.jpg']
-    }
-];
+
 let Bags = [
     {
         brand: "LAVIE",
@@ -525,6 +441,92 @@ let menActivewear = [
 ];
 
 
+let Shoes = [
+    {
+        brand: "FILA",
+        category: "sports shoes",
+        price: "1499",
+        discount: "50",
+        color: ['black', 'white', 'pink'
+        ],
+        sizes: ['8-UK', '7-Uk', '9-UK'
+        ],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_05-2100.jpg']
+    },
+    {
+        brand: "FILA",
+        category: "sports shoes",
+        price: "1819",
+        discount: "10",
+        color: ['black', 'white', 'yellow'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_05-2100.jpg']
+    },
+    {
+        brand: "ADIDAS",
+        category: "sports shoes",
+        price: "4299",
+        discount: "30",
+        color: ['white', 'black', 'pink'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_05-2100.jpg']
+    },
+    {
+        brand: "ADIDAS",
+        category: "sports shoes",
+        price: "4999",
+        discount: "20",
+        color: ['red', 'black', 'pink'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_06-2100.jpg']
+    },
+    {
+        brand: "REEBOK",
+        category: "sports shoes",
+        price: "3799",
+        discount: "15",
+        color: ['black', 'brown', 'green'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_04-2100.jpg']
+    },
+    {
+        brand: "CODE",
+        category: "loffers",
+        price: "1549",
+        discount: "50",
+        color: ['brown', 'black', 'white'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_06-2100.jpg']
+    },
+    {
+        brand: "CODE",
+        category: "loffers",
+        price: "2049",
+        discount: "50",
+        color: ['brown', 'black', 'white'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_06-2100.jpg']
+    },
+    {
+        brand: "CODE",
+        category: "sandals",
+        price: "1049",
+        discount: "10",
+        color: ['brown', 'black', 'white'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Brown-1000010222744_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Black-1000010222744_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Black-1000010222744_06-2100.jpg',]
+    },
+    {
+        brand: "CODE",
+        category: "sandals",
+        price: "1299",
+        discount: "15",
+        color: ['brown', 'black', 'white'],
+        sizes: ['8-UK', '7-Uk', '9-UK'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_06-2100.jpg']
+    }
+];
+
 
 
 let displayProductDiv = document.getElementById('displayProductDiv');
@@ -536,38 +538,54 @@ function showProducts(data) {
         let card = document.createElement("div");
         let img = document.createElement("img");
         img.src = item.img[0];
-        let name = document.createElement("h6");
-        name.innerText = item.brand;
-        let price = document.createElement("p");
+
+        let brandName = document.createElement('div');
+        let brand = document.createElement("h3");        
+        brand.innerText = item.brand +" "+ item.category;
+        brandName.append(brand);
+
+        let priceDiv = document.createElement('div');
+        let price = document.createElement("h2");
         price.innerText = "₹ " + item.price;
+        priceDiv.append(price)
 
         let selectionDiv = document.createElement('div');
         selectionDiv.setAttribute('id', 'selectionDiv');
         let addTocartDiv = document.createElement('div');
         addTocartDiv.setAttribute('id', 'addTocartDiv');
 
-        let colors = document.createElement('select')
+        let colors = document.createElement('select');
+        colors.setAttribute('id','colorsOption');
         for (let i = 0; i < item.color.length; i++) {
             let colorsOption = document.createElement('option');
             colorsOption.innerText = item.color[i];
             colors.append(colorsOption);
         }
+
         let sizes = document.createElement('select');
+        let defaultOption = document.createElement('option');
+            defaultOption.innerText = "Select Size";
+            sizes.append(defaultOption);
+        sizes.setAttribute('id','sizesOption');
         for (let i = 0; i < item.sizes.length; i++) {
             let sizesOption = document.createElement('option');
             sizesOption.innerText = item.sizes[i];
             sizes.append(sizesOption);
         }
-        let addtocartbtn = document.createElement("button");
-        addtocartbtn.innerHTML = "Add to Cart";
-        addtocartbtn.addEventListener("click", function (event) {
+
+        let addToCartBtn = document.createElement("button");
+        addToCartBtn.setAttribute('id','addToCartBtn');
+        addToCartBtn.innerHTML = "Add to Cart";
+
+
+        addToCartBtn.addEventListener("click", function (event) {
             addtocartbtn(item);
         });
 
         selectionDiv.append(colors, sizes);
-        addTocartDiv.append(addtocartbtn);
+        addTocartDiv.append(addToCartBtn);
 
-        card.append(img, price, name, selectionDiv,addTocartDiv);
+        card.append(img, priceDiv, brandName, selectionDiv,addTocartDiv);
         displayProductDiv.append(card);
     });
 }
