@@ -1,7 +1,4 @@
 
-
-let displayProductDiv = document.getElementById('displayProductDiv');
-
 let womenTopWear = [
     {
         brand: "BOSSINI",
@@ -526,6 +523,13 @@ let menActivewear = [
     }
 
 ];
+
+
+
+
+let displayProductDiv = document.getElementById('displayProductDiv');
+
+
 function showProducts(data) {
     displayProductDiv.innerHTML = null;
     data.forEach(function (item) {
@@ -544,25 +548,27 @@ function showProducts(data) {
 
         let colors = document.createElement('select')
         for (let i = 0; i < item.color.length; i++) {
-            let option = document.createElement('option');
-            option.innerText = item.color[i];
+            let colorsOption = document.createElement('option');
+            colorsOption.innerText = item.color[i];
+            colors.append(colorsOption);
         }
         let sizes = document.createElement('select');
         for (let i = 0; i < item.sizes.length; i++) {
-            let option = document.createElement('option');
-            option.innerText = item.color[i];
+            let sizesOption = document.createElement('option');
+            sizesOption.innerText = item.sizes[i];
+            sizes.append(sizesOption);
         }
-        let addtocart = document.createElement("button");
-        addtocart.innerHTML = "Add to Cart";
-        addtocart.addEventListener("click", function (event) {
-            addtocart(item);
+        let addtocartbtn = document.createElement("button");
+        addtocartbtn.innerHTML = "Add to Cart";
+        addtocartbtn.addEventListener("click", function (event) {
+            addtocartbtn(item);
         });
 
         selectionDiv.append(colors, sizes);
-        addTocartDiv.append(addtocart);
+        addTocartDiv.append(addtocartbtn);
 
         card.append(img, price, name, selectionDiv,addTocartDiv);
         displayProductDiv.append(card);
     });
 }
-showProducts(menBottomwear);
+showProducts(Shoes);
