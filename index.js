@@ -30,6 +30,9 @@ women.onmouseenter = function () {
     womenCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
         h5.innerText = category;
+        h5.addEventListener('click', function(){
+            console.log(h5.innerText);
+        });
         categories.append(h5);
     });
 }
@@ -45,6 +48,9 @@ men.onmouseenter = function () {
     menCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
         h5.innerText = category;
+        h5.addEventListener('click', function(){
+            console.log(h5.innerText);
+        });
         categories.append(h5);
     });
 }
@@ -59,6 +65,9 @@ kids.onmouseenter = function () {
     kids.style.backgroundColor = 'white';
     kidCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
+        h5.addEventListener('click', function(){
+            console.log(h5.innerText);
+        });
         h5.innerText = category;
         categories.append(h5);
     });
@@ -74,6 +83,9 @@ shoesAndBags.onmouseenter = function () {
     shoesAndBags.style.backgroundColor = 'white';
     shoesAndBagsCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
+        h5.addEventListener('click', function(){
+            console.log(h5.innerText);
+        });
         h5.innerText = category;
         categories.append(h5);
     });
