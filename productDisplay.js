@@ -550,9 +550,7 @@ function showProducts(data) {
         priceDiv.append(price)
 
         let selectionDiv = document.createElement('div');
-        selectionDiv.setAttribute('id', 'selectionDiv');
-        let addTocartDiv = document.createElement('div');
-        addTocartDiv.setAttribute('id', 'addTocartDiv');
+        selectionDiv.setAttribute('id', 'selectionDiv');        
 
         let colors = document.createElement('select');
         colors.setAttribute('id','colorsOption');
@@ -573,13 +571,16 @@ function showProducts(data) {
             sizes.append(sizesOption);
         }
 
+        let addTocartDiv = document.createElement('div');
+        addTocartDiv.setAttribute('id', 'addTocartDiv');
+
         let addToCartBtn = document.createElement("button");
         addToCartBtn.setAttribute('id','addToCartBtn');
         addToCartBtn.innerHTML = "Add to Cart";
 
 
-        addToCartBtn.addEventListener("click", function (event) {
-            addtocartbtn(item);
+        addToCartBtn.addEventListener("click", function () {
+            // addtocartbtn(item);
         });
 
         selectionDiv.append(colors, sizes);

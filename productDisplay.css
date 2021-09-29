@@ -82,6 +82,8 @@ img {
     width: 100%;
     height: auto;
 
+    cursor: pointer;
+
     padding: 7%;
     border-radius: 2%;
     
