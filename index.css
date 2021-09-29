@@ -105,3 +105,13 @@ nav {
     text-align: center;
     margin: auto;
 }
+
+#carousel {
+    margin: auto;
+    width: 80%;
+    padding: 2.5%;
+}
+#carousel img {
+    width: 100%;
+    height: auto;
+}
