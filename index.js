@@ -102,10 +102,13 @@ let carouselLinks = [
     'https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner5-desktop-Women-27Sep2021.jpg',
     'https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner6-desktop-Women-27Sep2021.jpg'
 ];
+
 let img = document.createElement('img');
+
 img.src = carouselLinks[carouselCounter];
 carousel.append(img);
 carouselCounter++;
+
 function showCarousel() {
     carousel.innerHTML = null;
     if (carouselCounter == 6) {
@@ -116,6 +119,7 @@ function showCarousel() {
     carousel.append(img);
     carouselCounter++;
 }
+
 setInterval(function () {
     showCarousel();
 }, 5000);
