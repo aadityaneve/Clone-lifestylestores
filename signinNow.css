@@ -1,0 +1,9 @@
+.outerBox{
+    width:800px;
+    background-color: aqua;
+}
+.innerBox{
+    width:400px;
+    display:grid;
+    border:1px solid black;
+}

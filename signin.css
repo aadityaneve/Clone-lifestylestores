@@ -1,0 +1,42 @@
+.mainInputBox{
+    padding:150px 20px 50px 20px;
+    width:1500px;
+    display:flex;
+}
+.adjustBox{
+    background-color:rgb(253, 253, 252);
+    width:400px;
+    display:grid;
+    margin: auto;
+    
+    border: 3px ;
+    padding: 10px;
+      
+}
+
+.boxMobile{
+    display:flex;
+    border:1px solid orange;
+    padding:10px;
+}
+
+.insideBox1{
+    display:flex;
+    padding: 10px 10px 10px 0;
+}
+
+.insideBox2{
+    display:flex;
+    padding:20px 50px 20px 0;
+    border:1px solid pink;
+}
+.button {
+    background-color: orange;
+    border: none ;
+    color:white;
+    padding: 7px 26px 7px 26px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  }
