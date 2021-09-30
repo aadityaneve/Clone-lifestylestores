@@ -25,3 +25,9 @@ span{
   margin-left: 5px;
   
 }
+#top{
+    width: 83%;
+    height: 400px;
+    border: 1px solid red;
+    margin-left: 105px;
+}
