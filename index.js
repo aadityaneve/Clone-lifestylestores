@@ -1,5 +1,10 @@
 
 
+if(localStorage.getItem('variables') === null){
+    localStorage.setItem('variables', JSON.stringify([]));
+}
+
+
 let navbar = document.getElementById('navbar');
 let women = document.getElementById('women');
 let men = document.getElementById('men');
@@ -30,8 +35,12 @@ women.onmouseenter = function () {
     womenCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
         h5.innerText = category;
-        h5.addEventListener('click', function(){
-            console.log(h5.innerText);
+        h5.setAttribute('style', 'cursor: pointer;');
+        h5.addEventListener('click', function () {
+            let variables = JSON.parse(localStorage.getItem('variables'));
+            variables.push(h5.innerText);
+            localStorage.setItem('variables',JSON.stringify(variables));
+            window.location.href = 'product.html';
         });
         categories.append(h5);
     });
@@ -40,7 +49,6 @@ women.onmouseleave = function () {
     women.style.color = 'black';
     women.style.backgroundColor = '#F7F8F7';
 }
-
 men.onmouseenter = function () {
     categories.innerHTML = null;
     men.style.color = 'orange';
@@ -48,8 +56,11 @@ men.onmouseenter = function () {
     menCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
         h5.innerText = category;
-        h5.addEventListener('click', function(){
-            console.log(h5.innerText);
+        h5.setAttribute('style', 'cursor: pointer;');
+        h5.addEventListener('click', function () {
+            let variables = JSON.parse(localStorage.getItem('variables'));
+            variables.push(h5.innerText);
+            localStorage.setItem('variables',JSON.stringify(variables));
         });
         categories.append(h5);
     });
@@ -65,10 +76,13 @@ kids.onmouseenter = function () {
     kids.style.backgroundColor = 'white';
     kidCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
-        h5.addEventListener('click', function(){
-            console.log(h5.innerText);
-        });
         h5.innerText = category;
+        h5.setAttribute('style', 'cursor: pointer;');
+        h5.addEventListener('click', function () {
+            let variables = JSON.parse(localStorage.getItem('variables'));
+            variables.push(h5.innerText);
+            localStorage.setItem('variables',JSON.stringify(variables));
+        });
         categories.append(h5);
     });
 }
@@ -83,10 +97,13 @@ shoesAndBags.onmouseenter = function () {
     shoesAndBags.style.backgroundColor = 'white';
     shoesAndBagsCategories.forEach(function (category) {
         let h5 = document.createElement('h5');
-        h5.addEventListener('click', function(){
-            console.log(h5.innerText);
-        });
         h5.innerText = category;
+        h5.setAttribute('style', 'cursor: pointer;');
+        h5.addEventListener('click', function () {
+            let variables = JSON.parse(localStorage.getItem('variables'));
+            variables.push(h5.innerText);
+            localStorage.setItem('variables',JSON.stringify(variables));
+        });
         categories.append(h5);
     });
 }
@@ -135,16 +152,4 @@ function showCarousel() {
 setInterval(function () {
     showCarousel();
 }, 5000);
-
-
-
-
-
-
-
-
-
-
-
-
 

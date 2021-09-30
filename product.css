@@ -1,0 +1,92 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFFFFF;
+}
+
+body h2{
+    font-size: 1.2em;
+}
+
+body h3 {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+#displayProductDiv {
+    margin: auto;    
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh 55vh;
+
+    gap: 1.5%;
+    padding: 3%;
+
+    width: 80%;
+}
+
+#displayProductDiv > div {
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+
+    padding: 1%;
+
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+}
+
+#selectionDiv {
+    margin-left: 0%;
+    margin-right: 0%;
+
+    /* border: 1px solid green; */
+
+    width: 97%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+    column-gap: 1%;
+    padding: 2%;
+}
+
+/* button{
+    margin: auto;
+    background-color: yellow;
+} */
+
+#colorsOption, #sizesOption {
+    /* margin-left: 0;
+    margin-right: 0; */
+    margin: auto;
+
+    font-size: 1em;
+    border-radius: 2%;
+
+    border: 1px solid lightgrey;
+
+    width: 100%;
+    height: 3em;
+}
+
+#addToCartBtn {
+    margin: auto;
+    border: none;
+    /* border: 1px solid black; */
+
+    width: 100%;
+    height: auto;
+
+    cursor: pointer;
+
+    padding: 7%;
+    border-radius: 2%;
+    
+    background-color: #FAA81E;
+    color: white;
+}
