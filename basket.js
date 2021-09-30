@@ -119,16 +119,20 @@ let subTotal = document.createElement('div');
     subTotal.innerText = 'Subtotal ('+basket.length+" item):"+" ₹ "+totalAmount;
     subTotal.setAttribute('style','font-weight: 900; text-align: center;');
 
-let addToCartBtn = document.createElement("button");
-    addToCartBtn.setAttribute('id','addToCartBtn');
-    addToCartBtn.innerHTML = "<strong>Checkout Now</strong>";
+let checkOutNowBtn = document.createElement("button");
+checkOutNowBtn.setAttribute('id','addToCartBtn');
+checkOutNowBtn.innerHTML = "<strong>Checkout Now</strong>";
+
+checkOutNowBtn.addEventListener("click",function(){
+    window.location.href="checkout.html";
+});
 
 let hr1 = document.createElement('hr');
 let hr2 = document.createElement('hr');
 let hr3 = document.createElement('hr');
 
 checkoutHeading.append(subTotal);
-checkoutPanel.append(hr1, checkoutHeading, hr2, addToCartBtn, hr3);
+checkoutPanel.append(hr1, checkoutHeading, hr2, checkOutNowBtn, hr3);
 
 
 
