@@ -12,9 +12,12 @@ let basketTable = document.createElement("table")
 basketTable.style.border = "1px solid black"
 basketTable.style.marginTop = "20px";
 
+
 let tableRowHeading = document.createElement('tr');
+    tableRowHeading.setAttribute('style','text-align: left;');
 let tableHeadItem = document.createElement('th');
     tableHeadItem.innerText = "Item";
+    tableHeadItem.setAttribute('style','width: 20%; height: 3em;');
 let tableHeadDesc = document.createElement('th');
     tableHeadDesc.innerText = 'Description';
 let tableHeadPrice = document.createElement('th');
@@ -28,6 +31,14 @@ let tableHeadTotalPrice = document.createElement('th');
 basketTable.append(tableRowHeading);
 basketItemsDiv.append(basketTable);
 
+let tableLogo = document.createElement('tr');
+let tableDataLogo = document.createElement('h1');
+    tableDataLogo.innerText = 'lifestyle';
+    tableLogo.append(tableDataLogo);
+    basketTable.append(tableLogo);
+    basketItemsDiv.append(basketTable);
+
+
 basket.forEach(function (element){
     let basket = JSON.parse(localStorage.getItem('basket'));
 
@@ -40,23 +51,42 @@ basket.forEach(function (element){
 
     let tableDataBrand = document.createElement('td');
     let brand = document.createElement('h2');
-        brand.innerText = element.brand;
-        tableDataBrand.append(brand);
+        brand.innerText = element.brand +" "+ element.category;
+        let colorH4 = document.createElement('h4');
+            colorH4.innerText = 'Color'+": "+element.color;
+        let sizeH4 = document.createElement('h4');
+            sizeH4.innerText = 'size'+": "+element.size;
+        tableDataBrand.append(brand, colorH4, sizeH4);
     
     let tableDataPrice = document.createElement('td');
     let price = document.createElement('h3');
-        price.innerText = element.price;
+        price.innerText = "₹ "+element.price;
         tableDataPrice.append(price);
 
     let tableDataQuantity = document.createElement('td');
     let quantity = document.createElement('select');
-        quantity.innerText = '1';
+        let oneOption = document.createElement('option');
+            oneOption.innerText = '1';
+        let twoOption = document.createElement('option');
+            twoOption.innerText = '2';
+        let threeOption = document.createElement('option');
+            threeOption.innerText = '3';
+        quantity.append(oneOption,twoOption,threeOption)
         tableDataQuantity.append(quantity);
+
 
     let tableDataTotalPrice = document.createElement('td');
     let totalPrice = document.createElement('h3');
-        totalPrice.innerText = element.price;
+        totalPrice.innerText = "₹ "+element.price;
         tableDataTotalPrice.append(totalPrice);
+
+    quantity.addEventListener('change', function(event){
+        // console.log(event.target.value);
+        totalPrice.innerText = "₹ "+Number(element.price)*Number(event.target.value);
+        // console.log(event.target.value);
+        // console.log(element.price);        
+        calculateTotal(event.target.value*element.price, Number(event.target.value-1));
+    });
 
     tableDataRow.append(tableDataImg,tableDataBrand,tableDataPrice,tableDataQuantity,tableDataTotalPrice);
 
@@ -67,10 +97,42 @@ basket.forEach(function (element){
 
 basketItemsDiv.append(basketTable);
 
-   
+
+let totalAmount = 0;
+let totalProducts = 1;
+
+let checkoutPanel = document.getElementById('checkoutPanel');
+let checkoutHeading = document.createElement('div');
+console.log(totalProducts);
+basket.forEach(function (element){
+    totalAmount+=Number(element.price)*totalProducts;
+    // console.log(totalAmount);
+});
+
+function calculateTotal(totalProductsPrice, extraProducts=0){
+    totalAmount+=totalProductsPrice;
+    // console.log(totalAmount);
+    subTotal.innerText = 'Subtotal ('+(basket.length+=extraProducts)+" item):"+" ₹ "+totalAmount;
+}
+
+let subTotal = document.createElement('div');
+    subTotal.innerText = 'Subtotal ('+basket.length+" item):"+" ₹ "+totalAmount;
+    subTotal.setAttribute('style','font-weight: 900; text-align: center;');
+
+let addToCartBtn = document.createElement("button");
+    addToCartBtn.setAttribute('id','addToCartBtn');
+    addToCartBtn.innerHTML = "<strong>Checkout Now</strong>";
+
+let hr1 = document.createElement('hr');
+let hr2 = document.createElement('hr');
+let hr3 = document.createElement('hr');
+
+checkoutHeading.append(subTotal);
+checkoutPanel.append(hr1, checkoutHeading, hr2, addToCartBtn, hr3);
+
+
 
 localStorage.setItem('basket',JSON.stringify(basket));
-
 
 
 // let div = document.createElement("div");
@@ -115,137 +177,137 @@ localStorage.setItem('basket',JSON.stringify(basket));
 
 
 
-let Itmes_image = document.createElement("img");
-Itmes_image.src = "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007240054-3012-Red-Red-1000007240054-3012_01-345.jpg"
+// let Itmes_image = document.createElement("img");
+// Itmes_image.src = "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007240054-3012-Red-Red-1000007240054-3012_01-345.jpg"
 
-Itmes_image.style.height = "250px"
-Itmes_image.style.width = "200px"
-
-
-
-div.append(offer_2, line_2);
-para_1.append(offer, line_1, div, table, Itmes_image);
+// Itmes_image.style.height = "250px"
+// Itmes_image.style.width = "200px"
 
 
-let womenTopWear = [
-    {
-        brand: "BOSSINI Solid Round Neck",
-        category: "T-shirt",
-        price: "349",
-        discount: "50",
-        fitting: "Slim Fit",
-        color: "[gray, red, green]",
-        sizes: "[s,m,l]",
-        img: "https://809fcedc4a4c2e0e3a54-0908f7c4d20fa14a53c9b6a1907a24c5.lmsin.net/1000007681444-Green-Olive-1000007681444_01-345.jpg",
-    },
-    {
-        brand: "FAME FOREVER",
-        category: "T-shirt",
-        price: "449",
-        discount: "50",
-        fitting: "Slim Fit",
-        color: "[white, red, green]",
-        sizes: "[s,m,l]",
-        img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000006751063-Var0908-Grey-Grey-1000006751063-Var0908_01-345.jpg",
-    },
-    {
-        brand: "GINGER",
-        category: "Top",
-        price: "449",
-        discount: "50",
-        fitting: "Slim Fit",
-        color: "[yellow, red, green]",
-        sizes: "[s,m,l]",
-        img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007683947-var7-Pink-CORAL-1000007683947-var7_01-345.jpg",
-    },
-    {
-        brand: "LATIN QUARTERS",
-        category: "T-shirt",
-        price: "749",
-        discount: "50",
-        fitting: "Regular Fit",
-        color: "[pink, red, green]",
-        sizes: "[s,m,l]",
-        img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007225420-201218-Yellow-Mustard-1000007225420-201218_01-345.jpg",
-    },
-    {
-        brand: "GINGER",
-        category: "Shirt",
-        price: "749",
-        discount: "50",
-        fitting: "Slim Fit",
-        color: "[Black, red, green]",
-        sizes: "[s,m,l]",
-        img: "https://809fcedc4a4c2e0e3a54-0908f7c4d20fa14a53c9b6a1907a24c5.lmsin.net/1000007225492-Green-OLIVE-1000007225492_01-345.jpg",
-    },
-    {
-        brand: "GINGER",
-        category: "Top",
-        price: "749",
-        discount: "50",
-        fitting: "Slim Fit",
-        color: "[Black, red, green]",
-        sizes: "[s,m,l]",
-        img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007240054-3012-Red-Red-1000007240054-3012_01-345.jpg",
-    },
-    {
-        brand: "GINGER",
-        category: "Top",
-        price: "649",
-        discount: "50",
-        fitting: "Slim Fit",
-        color: "[yellow, red, green]",
-        sizes: "[s,m,l]",
-        img: "https://809fcedc4a4c2e0e3a54-0908f7c4d20fa14a53c9b6a1907a24c5.lmsin.net/1000007871078-Black-BLACK-1000007871078_01-345.jpg",
-    },
-    {
-        brand: "BOSSINI Solid Round Neck",
-        category: "Top",
-        price: "649",
-        discount: "50",
-        fitting: "Slim Fit",
-        color: "[red, black, green]",
-        sizes: "[s,m,l]",
-        img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007225451-22119-Blue-Blue-1000007225451-22119_01-345.jpg",
-    }];
 
-if (localStorage.getItem('life_style') == null) {
-    localStorage.setItem('life_style', JSON.stringify([]));
-}
-womenTopWear.forEach(function (el) {
-    var data = JSON.parse(localStorage.getItem('life_style'));
-    data.push(el);
-    localStorage.setItem('life_style', JSON.stringify(data));
-
-});
+// div.append(offer_2, line_2);
+// para_1.append(offer, line_1, div, table, Itmes_image);
 
 
+// let womenTopWear = [
+//     {
+//         brand: "BOSSINI Solid Round Neck",
+//         category: "T-shirt",
+//         price: "349",
+//         discount: "50",
+//         fitting: "Slim Fit",
+//         color: "[gray, red, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://809fcedc4a4c2e0e3a54-0908f7c4d20fa14a53c9b6a1907a24c5.lmsin.net/1000007681444-Green-Olive-1000007681444_01-345.jpg",
+//     },
+//     {
+//         brand: "FAME FOREVER",
+//         category: "T-shirt",
+//         price: "449",
+//         discount: "50",
+//         fitting: "Slim Fit",
+//         color: "[white, red, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000006751063-Var0908-Grey-Grey-1000006751063-Var0908_01-345.jpg",
+//     },
+//     {
+//         brand: "GINGER",
+//         category: "Top",
+//         price: "449",
+//         discount: "50",
+//         fitting: "Slim Fit",
+//         color: "[yellow, red, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007683947-var7-Pink-CORAL-1000007683947-var7_01-345.jpg",
+//     },
+//     {
+//         brand: "LATIN QUARTERS",
+//         category: "T-shirt",
+//         price: "749",
+//         discount: "50",
+//         fitting: "Regular Fit",
+//         color: "[pink, red, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007225420-201218-Yellow-Mustard-1000007225420-201218_01-345.jpg",
+//     },
+//     {
+//         brand: "GINGER",
+//         category: "Shirt",
+//         price: "749",
+//         discount: "50",
+//         fitting: "Slim Fit",
+//         color: "[Black, red, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://809fcedc4a4c2e0e3a54-0908f7c4d20fa14a53c9b6a1907a24c5.lmsin.net/1000007225492-Green-OLIVE-1000007225492_01-345.jpg",
+//     },
+//     {
+//         brand: "GINGER",
+//         category: "Top",
+//         price: "749",
+//         discount: "50",
+//         fitting: "Slim Fit",
+//         color: "[Black, red, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007240054-3012-Red-Red-1000007240054-3012_01-345.jpg",
+//     },
+//     {
+//         brand: "GINGER",
+//         category: "Top",
+//         price: "649",
+//         discount: "50",
+//         fitting: "Slim Fit",
+//         color: "[yellow, red, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://809fcedc4a4c2e0e3a54-0908f7c4d20fa14a53c9b6a1907a24c5.lmsin.net/1000007871078-Black-BLACK-1000007871078_01-345.jpg",
+//     },
+//     {
+//         brand: "BOSSINI Solid Round Neck",
+//         category: "Top",
+//         price: "649",
+//         discount: "50",
+//         fitting: "Slim Fit",
+//         color: "[red, black, green]",
+//         sizes: "[s,m,l]",
+//         img: "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007225451-22119-Blue-Blue-1000007225451-22119_01-345.jpg",
+//     }];
+
+// if (localStorage.getItem('life_style') == null) {
+//     localStorage.setItem('life_style', JSON.stringify([]));
+// }
+// womenTopWear.forEach(function (el) {
+//     var data = JSON.parse(localStorage.getItem('life_style'));
+//     data.push(el);
+//     localStorage.setItem('life_style', JSON.stringify(data));
+
+// });
 
 
 
 
-let cont = document.getElementById("container");
-let items = JSON.parse(localStorage.getItem('life_style'));
-items.forEach(function (el) {
-    let div = document.createElement('div');
-    let image = document.createElement('img');
-    image.src = el.img;
-    let brand = document.createElement('span');
-    brand.innerText = el.brand;
-    let category = document.createElement('span');
-    category.innerText = el.category;
-    let price = document.createElement('h3');
-    price.innerText = "MRP " + el.price;
-    let discount = document.createElement('h2');
-    discount.innerText = el.discount + "%OFF";
-    discount.style.backgroundColor = "#F44336"
-    let fitting = document.createElement('span');
-    fitting.innerText = el.fitting;
-    let color = document.createElement('p');
-    color.innerText = el.color;
-    let sizes = document.createElement('p');
-    sizes.innerText = el.sizes;
 
-    div.append(image, price, discount, brand, category, fitting);
-    cont.append(div);
-});
+
+// let cont = document.getElementById("container");
+// let items = JSON.parse(localStorage.getItem('life_style'));
+// items.forEach(function (el) {
+//     let div = document.createElement('div');
+//     let image = document.createElement('img');
+//     image.src = el.img;
+//     let brand = document.createElement('span');
+//     brand.innerText = el.brand;
+//     let category = document.createElement('span');
+//     category.innerText = el.category;
+//     let price = document.createElement('h3');
+//     price.innerText = "MRP " + el.price;
+//     let discount = document.createElement('h2');
+//     discount.innerText = el.discount + "%OFF";
+//     discount.style.backgroundColor = "#F44336"
+//     let fitting = document.createElement('span');
+//     fitting.innerText = el.fitting;
+//     let color = document.createElement('p');
+//     color.innerText = el.color;
+//     let sizes = document.createElement('p');
+//     sizes.innerText = el.sizes;
+
+//     div.append(image, price, discount, brand, category, fitting);
+//     cont.append(div);
+// });
