@@ -1,8 +1,3 @@
-
-
-
-
-// daya data
 let womenTopWear = [
     {
         brand: "BOSSINI",
@@ -93,7 +88,28 @@ let womenTopWear = [
         color: ['red', 'black', 'green'],
         sizes: ['s', 'm', 'l'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009199619-Red-Wine-1000009199619_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009199619-Red-Wine-1000009199619_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009199619-Red-Wine-1000009199619_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009199619-Red-Wine-1000009199619_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009199619-Red-Wine-1000009199619_05-2100.jpg']
+    },
+    {
+        brand: "FAME FOREVER",
+        category: "Ruffle Top",
+        price: "734",
+        discount: "50",
+        fitting: "Slim Fit",
+        color: [' Yellow', 'black', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009776754-Yellow-Yellow-1000009776754_01-2100.jpg']
+    },
+    {
+        brand: "FAME FOREVER",
+        category: "Sleeve Top",
+        price: "734",
+        discount: "50",
+        fitting: "Slim Fit",
+        color: [' Yellow', 'black', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007193205-201218-Yellow-Mustard-1000007193205-201218_01-2100.jpg']
     }
+   
 ];
 
 let womenEthnicWear = [
@@ -110,7 +126,7 @@ let womenEthnicWear = [
     {
         brand: "MELANGE",
         category: "Kurta",
-        price: "1019",
+        price: "1,019",
         discount: "40",
         fitting: "Straight Fit",
         color: ['red', 'black', 'green'],
@@ -188,14 +204,98 @@ let womenEthnicWear = [
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009766248-Red-Red-1000009766248_05-2100.jpg']
     }
 ];
+let WomenBottoms=[
+    {
+        brand: "GINGER",
+        category: " Cropped Jeans",
+        price: "699",
+        discount: "40",
+        fitting: " Slim Fit",
+        color: ['Black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008525354-Var7-Black-BLACK-1000008525354-Var7_01-2100.jpg']
+    },
+    {
+        brand: "GINGER",
+        category: "Jeans",
+        price: "899",
+        discount: "40",
+        fitting: "Straight Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008207391-var7-White-1000008207391-var7_01-2100.jpg']
+    },
+    {
+        brand: "GINGER",
+        category: "Jeans",
+        price: "449",
+        discount: "80",
+        fitting: "Regular Fit",
+        color: ['orange', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008415750-Orange-RUST-1000008415750_01-2100.jpg']
+    },
+    {
+        brand: "CODE",
+        category: "Trousers",
+        price: "1049",
+        discount: "80",
+        fitting: "Regular Fit",
+        color: ['red', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009712694-Red-Wine-1000009712694_01-2100.jpg']
+    },
+];
 
-let womenBags = [
+let WomenDresses_and_Jumpsuits=[
+    {
+        brand: "GINGER",
+        category: "Sheath Dress",
+        price: "1149",
+        discount: "34",
+        fitting: "Straight Fit",
+        color: ['Green', 'black', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009689368-Green-DarkGreen-1000009689368_01-2100.jpg']
+    },
+    {
+        brand: "FAME FOREVER",
+        category: "Textured Round Neck Top",
+        price: "734",
+        discount: "40%",
+        fitting: "Straight Fit",
+        color: ['red', 'black', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009776817-Var5-Green-Green-1000009776817-Var5_01-2100.jpg']
+    },
+    {
+        brand: "GINGER",
+        category: " T-shirt",
+        price: "499",
+        discount: "40%",
+        fitting: "Straight Fit",
+        color: ['Pink', 'black', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009095295-Pink-Pink-1000009095295_01-2100.jpg']
+    },
+    {
+        brand: "GINGER",
+        category: " Bell Sleeves Top",
+        price: "499",
+        discount: "60%",
+        fitting: "regular Fit",
+        color: ['Black', 'black', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009847757-Black-Black-1000009847757_01-2100.jpg']
+    },
+];
+
+let Bags = [
     {
         brand: "LAVIE",
         category: "handheld bag",
         price: "1990",
         discount: "50",
-        sizes: ['s','m','l'],
         color: ['brown', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009317906-1000009317905_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009317906-1000009317905_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009317906-1000009317905_04-2100.jpg']
     },
@@ -204,7 +304,6 @@ let womenBags = [
         category: "handheld bag",
         price: "1690",
         discount: "40",
-        sizes: ['s','m','l'],
         color: ['brown', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009916513-1000009916508_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009916513-1000009916508_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009916513-1000009916508_05-2100.jpg']
     },
@@ -213,7 +312,6 @@ let womenBags = [
         category: "clutch",
         price: "799",
         discount: "5",
-        sizes: ['s','m','l'],
         color: ['pink', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007179594-1000007179591-27219_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007179594-1000007179591-27219_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007179594-1000007179591-27219_06-2100.jpg']
     },
@@ -222,7 +320,6 @@ let womenBags = [
         category: "clutch",
         price: "1699",
         discount: "10",
-        sizes: ['s','m','l'],
         color: ['pink', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008457264-1000008457263_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008457264-1000008457263_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008457264-1000008457263_05-2100.jpg']
     },
@@ -231,7 +328,6 @@ let womenBags = [
         category: "clutch",
         price: "1399",
         discount: "10",
-        sizes: ['s','m','l'],
         color: ['pink', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009785542-1000009785541_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009785544-1000009785541_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009785544-1000009785541_03-2100.jpg']
     }
@@ -239,7 +335,7 @@ let womenBags = [
 let kidsGirls = [
     {
         brand: "FAME FOREVER KIDS",
-        category: "Top",
+        cataegory: "Top",
         price: "320",
         discount: "60",
         fitting: "Regular Fit",
@@ -249,7 +345,7 @@ let kidsGirls = [
     },
     {
         brand: "JUNIORS Girls Solid",
-        category: "Pants",
+        cataegory: "Pants",
         price: "400",
         discount: "50",
         fitting: "Regular Fit",
@@ -259,7 +355,7 @@ let kidsGirls = [
     },
     {
         brand: "FAME FOREVER KIDS Girls",
-        category: "Frok",
+        cataegory: "Frok",
         price: "700",
         discount: "50",
         fitting: "Regular Fit",
@@ -269,7 +365,7 @@ let kidsGirls = [
     },
     {
         brand: "FAME FOREVER YOUNG Girls",
-        category: " Sleeves T-shirt",
+        cataegory: " Sleeves T-shirt",
         price: "300",
         discount: "50",
         fitting: "Regular Fit",
@@ -354,20 +450,61 @@ let mensTopwear = [
     {
         brand: "POLO",
         category: "T-shirt",
-        price: "1199",
+        price: "1,199",
         discount: "40",
         fitting: "Regular Fit",
         color: ['orange', 'red', 'green'],
         sizes: ['s', 'm', 'l'],
         img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010314170-Orange-Orange-1000010314170_01-2100.jpg"]
+    },
+    {
+        brand: "FREE AUTHORITY",
+        category: "T-shirt",
+        price: "699",
+        discount: "40",
+        fitting: "Regular Fit",
+        color: ['Blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010680110-Blue-1000010680110_01-2100.jpg"]
+    },
+    {
+        brand: "INDIAN TERRAIN ",
+        category: "T-shirt",
+        price: "699",
+        discount: "40",
+        fitting: "Regular Fit",
+        color: ['Black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009010365-Var8-Blue-Navy-1000009010365-Var8_01-2100.jpg"]
+    },
+    {
+        brand: "INDIAN TERRAIN ",
+        category: "T-shirt",
+        price: "1399",
+        discount: "40",
+        fitting: "Regular Fit",
+        color: ['Black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009010365-Var8-Blue-Navy-1000009010365-Var8_01-2100.jpg"]
+    },
+    {
+        brand: "CODE Textured ",
+        category: "Short Sleeves Shirt",
+        price: "899",
+        discount: "40",
+        fitting: "Regular Fit",
+        color: ['yellow', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008819914-Var11-Yellow-1000008819914-Var11_01-2100.jpg"]
     }
+
 ];
 
 let menBottomwear = [
     {
         brand: "WRANGLER",
         category: "Jeans",
-        price: "2096",
+        price: "2,096",
         discount: "30",
         fitting: "Regular Fit",
         color: ['white', 'red', 'green'],
@@ -377,7 +514,7 @@ let menBottomwear = [
     {
         brand: "LOUIS PHILIPPE ",
         category: "Trousers",
-        price: "1799",
+        price: "1,799",
         discount: "10",
         fitting: "Regular Fit",
         color: ['blue', 'red', 'green'],
@@ -387,7 +524,7 @@ let menBottomwear = [
     {
         brand: "CODE",
         category: "Trousers",
-        price: "1104",
+        price: "1,104",
         discount: "15",
         fitting: "Regular Fit",
         color: ['yellow', 'red', 'green'],
@@ -403,7 +540,48 @@ let menBottomwear = [
         color: ['black', 'red', 'green'],
         sizes: ['s', 'm', 'l'],
         img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009813654-Blue-Navy-1000009813654_01-2100.jpg"]
+    },
+    {
+        brand: "ARROW SPORT",
+        category: "Trousers",
+        price: "2699",
+        discount: "35",
+        fitting: "Solid Slim Straight Fit",
+        color: ['black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010665097-Blue-1000010665097_01-2100.jpg"]
+    },
+    {
+        brand: "CODE Men",
+        category: "Trousers",
+        price: "849",
+        discount: "40",
+        fitting: "Solid Slim Fit Casual ",
+        color: ['black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009025123-Grey-Grey-1000009025123_01-2100.jpg"]
+    },
+    {
+        brand: "INDIAN TERRAIN",
+        category: "Trousers",
+        price: "2299",
+        discount: "40",
+        fitting: "Solid Slim Fit Casual ",
+        color: ['Beige', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009245402-Beige-Beige-1000009245402_01-2100.jpg"]
+    },
+    {
+        brand: "UCLA ",
+        category: "Trousers",
+        price: "2299",
+        discount: "20",
+        fitting: "Elasticated Track Pants ",
+        color: ['Grey', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009245402-Beige-Beige-1000009245402_01-2100.jpg"]
     }
+
 ];
 let menActivewear = [
     {
@@ -429,7 +607,93 @@ let menActivewear = [
     {
         brand: "PUMA",
         category: "Track Pants",
-        price: "2499",
+        price: "2,499",
+        discount: "20",
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010653054-Blue-1000010653054_01-2100.jpg"]
+    },
+    {
+        brand: "KAPPA",
+        category: "Shorts",
+        price: "849",
+        discount: "15",
+        fitting: "Regular Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010194961-White-White-1000010194961_01-2100.jpg"]
+    },
+    {
+        brand: "KAPPA",
+        category: "Shorts",
+        price: "699",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['Blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000003426336-Blue-1000003426336-140821_01-2100.jpg "]
+    },
+    {
+        brand: "KAPPA",
+        category: " Neck T-shirt",
+        price: "699",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['Blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007642278-Var11-Grey-GREY-1000007642278-Var11_01-2100.jpg "]
+    },
+    {
+        brand: "KAPPA",
+        category: "Sleeves T-shir",
+        price: "599",
+        discount: "65",
+        fitting: "Regular Fit",
+        color: ['Blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009813052-Var7-Blue-Navy-1000009813052-Var7_01-2100.jpg"]
+    },
+    {
+        brand: "KAPPA",
+        category: "Sleeves T-shir",
+        price: "899",
+        discount: "53",
+        fitting: "Regular Fit",
+        color: ['Blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008678762-White-White-1000008678762_01-2100.jpg"]
+    },
+
+
+
+];
+
+let menActivewear = [
+    {
+        brand: "KAPPA ",
+        category: "Shorts",
+        price: "699",
+        discount: "30",
+        fitting: "Regular Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009812654-Var7-White-White-1000009812654-Var7_01-2100.jpg"]
+    },
+    {
+        brand: "KAPPA",
+        category: "Track Pants",
+        price: "849",
+        discount: "30",
+        fitting: "Regular Fit",
+        color: ['green', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ["https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009813654-Var9-Green-Olive-1000009813654-Var9_01-2100.jpg"]
+    },
+    {
+        brand: "PUMA",
+        category: "Track Pants",
+        price: "2,499",
         discount: "20",
         fitting: "Regular Fit",
         color: ['blue', 'red', 'green'],
@@ -450,595 +714,409 @@ let menActivewear = [
 ];
 
 
-let Shoes = [
+let kidsGirlsClothing = [
     {
-        brand: "FILA",
-        category: "sports shoes",
-        price: "1499",
+        brand: "FAME FOREVER",
+        category: "top",
+        price: "299",
         discount: "50",
-        color: ['black', 'white', 'pink'
-        ],
-        sizes: ['8-UK', '7-Uk', '9-UK'
-        ],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008876521-Pink-1000008876521_05-2100.jpg']
-    },
-    {
-        brand: "FILA",
-        category: "sports shoes",
-        price: "1819",
-        discount: "10",
-        color: ['black', 'white', 'yellow'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009851256-White-1000009851256_05-2100.jpg']
-    },
-    {
-        brand: "ADIDAS",
-        category: "sports shoes",
-        price: "4299",
-        discount: "30",
-        color: ['white', 'black', 'pink'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095490-Black-1000010095490_05-2100.jpg']
-    },
-    {
-        brand: "ADIDAS",
-        category: "sports shoes",
-        price: "4999",
-        discount: "20",
-        color: ['red', 'black', 'pink'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010141396-Red-1000010141396_06-2100.jpg']
-    },
-    {
-        brand: "REEBOK",
-        category: "sports shoes",
-        price: "3799",
-        discount: "15",
-        color: ['black', 'brown', 'green'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010168532-Black-1000010168532_04-2100.jpg']
-    },
-    {
-        brand: "CODE",
-        category: "loffers",
-        price: "1549",
-        discount: "50",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_05-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010021281-Black-1000010021281_06-2100.jpg']
-    },
-    {
-        brand: "CODE",
-        category: "loffers",
-        price: "2049",
-        discount: "50",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009512426-Brown-1000009512426_06-2100.jpg']
-    },
-    {
-        brand: "CODE",
-        category: "sandals",
-        price: "1049",
-        discount: "10",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Brown-1000010222744_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Black-1000010222744_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222744-Black-1000010222744_06-2100.jpg',]
-    },
-    {
-        brand: "CODE",
-        category: "sandals",
-        price: "1299",
-        discount: "15",
-        color: ['brown', 'black', 'white'],
-        sizes: ['8-UK', '7-Uk', '9-UK'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_02-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_04-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010222769-Brown-1000010222769-9042021_06-2100.jpg']
-    }
-];
-
-let WomenBottoms=[
-    {
-        brand: "GINGER",
-        category: " Cropped Jeans",
-        price: "699",
-        discount: "40",
-        fitting: " Slim Fit",
-        color: ['Black', 'red', 'green'],
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
         sizes: ['s', 'm', 'l'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008525354-Var7-Black-BLACK-1000008525354-Var7_01-2100.jpg']
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009019590-Green-GREEN-1000009019590_01-2100.jpg']
     },
     {
-        brand: "GINGER",
-        category: "Jeans",
-        price: "899",
-        discount: "40",
-        fitting: "Straight Fit",
+        brand: "JUNIORS ",
+        category: "Track Pants",
+        price: "399",
+        discount: "50",
+        fitting: "Regular Fit",
+        color: ['brown', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009313523-Brown-BURGANDY-1000009313523_01-2100.jpg']
+    },
+    {
+        brand: "FAME FOREVER",
+        category: "Dress",
+        price: "700",
+        discount: "50",
+        fitting: "Regular Fit",
         color: ['white', 'red', 'green'],
         sizes: ['s', 'm', 'l'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008207391-var7-White-1000008207391-var7_01-2100.jpg']
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009827879-Multicolour-1000009827879_01-2100.jpg']
     },
     {
-        brand: "GINGER",
-        category: "Jeans",
-        price: "449",
-        discount: "80",
+        brand: "FAME FOREVER ",
+        category: "Dress",
+        price: "160",
+        discount: "20",
         fitting: "Regular Fit",
-        color: ['orange', 'red', 'green'],
+        color: ['wheat', 'red', 'green'],
         sizes: ['s', 'm', 'l'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008415750-Orange-RUST-1000008415750_01-2100.jpg']
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008571264-Orange-Tangerine-1000008571264_01-2100.jpg']
     },
     {
-        brand: "CODE",
-        category: "Trousers",
-        price: "1049",
-        discount: "80",
+        brand: "JUNIORS ",
+        category: "Track Pants",
+        price: "399",
+        discount: "50",
+        fitting: "Regular Fit",
+        color: ['black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009313523-Black-BLACK-1000009313523_01-2100.jpg']
+    }
+    
+]
+let kidsBoysClothing = [
+    {
+        brand: "ADIDAS ",
+        category: "T-shirt",
+        price: "899",
+        discount: "50",
         fitting: "Regular Fit",
         color: ['red', 'red', 'green'],
         sizes: ['s', 'm', 'l'],
-        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009712694-Red-Wine-1000009712694_01-2100.jpg']
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008771226-Red-Red-1000008771226_01-2100.jpg']
     },
-];
+    {
+        brand: "ADIDAS",
+        category: "T-shirt",
+        price: "399",
+        discount: "30",
+        fitting: "Regular Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009751771-Grey-ECRU-1000009751771_01-2100.jpg']
+    },
+    {
+        brand: "ADIDAS",
+        category: "Shirt",
+        price: "599",
+        discount: "15",
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009354791-Blue-Mediumwash-1000009354791_01-2100.jpg']
+    },
+    {
+        brand: "ALLEN SOLLY",
+        category: "Shirt",
+        price: "466",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010142581-Multicolour-1000010142581_01-2100.jpg']
+    },
+    {
+        brand: "ALLEN SOLLY",
+        category: "T-shirt",
+        price: "399",
+        discount: "30",
+        fitting: "Regular Fit",
+        color: ['pink', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010351811-Pink-Pink-1000010351811_01-2100.jpg']
+    }
+]
 
+let kidsInfantGirl = [
+{
+    brand: "JUNIORS",
+    category: "Jeans",
+    price: "654",
+    discount: "25",
+    fitting: "Regular Fit",
+    color: ['blue', 'red', 'green'],
+    sizes: ['s', 'm', 'l'],
+    img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009313251-Blue-Mediumwash-1000009313251_01-2100.jpg']
+},
+{
+    brand: "JUNIORS",
+    category: "Track Pants",
+    price: "499",
+    discount: "30",
+    fitting: "Regular Fit",
+    color: ['black', 'red', 'green'],
+    sizes: ['s', 'm', 'l'],
+    img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009313523-Black-BLACK-1000009313523_01-2100.jpg']
+},
 
-if(localStorage.getItem('basket') === null){
-    localStorage.setItem('basket', JSON.stringify([]));
-}
+{
+    brand: "JUNIORS",
+    category: "Placket",
+    price: "299",
+    discount: "35",
+    fitting: "Regular Fit",
+    color: ['yellow', 'red', 'green'],
+    sizes: ['s', 'm', 'l'],
+    img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008544329-Yellow-1000008544329_01-2100.jpg']
+},
 
+{
+    brand: "ALLEN SOLLY",
+    category: "Leggings",
+    price: "299",
+    discount: "20",
+    fitting: "Regular Fit",
+    color: ['red', 'red', 'green'],
+    sizes: ['s', 'm', 'l'],
+    img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009523434-Red-Red-1000009523434_01-2100.jpg']
+},
 
-let displayProductDiv = document.getElementById('displayProductDiv');
+]
 
-let selectedColor = "";
-let selectedSize = "";
+let kidsInfantGirl = [
+    {
+        brand: "FS MINI",
+        category: "T-shirt",
+        price: "254",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['orange', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010351805-Pink-Peach-1000010351805_01-2100.jpg']
+    },
+    {
+        brand: "FS MINI",
+        category: "T-shirt",
+        price: "354",
+        discount: "35",
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010351757-Green-Green-1000010351757_01-2100.jpg']
+    },
+    {
+        brand: "JUNIORS",
+        category: "T-shirt",
+        price: "300",
+        discount: "35",
+        fitting: "Regular Fit",
+        color: ['green', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008902901-Multicolour-1000008902901_01-2100.jpg']
+    },
+    {
+        brand: "UNITED",
+        category: "Shirt",
+        price: "654",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['pink', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010224151-Pink-Pink-1000010224151_01-2100.jpg']
+    }
+]
 
-function showProducts(data) {
-    displayProductDiv.innerHTML = null;
-    data.forEach(function (item) {
-        let card = document.createElement("div");
-        let img = document.createElement("img");
-        img.src = item.img[0];
-
-        let brandName = document.createElement('div');
-        let brand = document.createElement("h3");        
-        brand.innerText = item.brand +" "+ item.category;
-        brandName.append(brand);
-
-        let priceDiv = document.createElement('div');
-        let price = document.createElement("h2");
-        price.innerText = "₹ " + item.price;
-        priceDiv.append(price)
-
-        let selectionDiv = document.createElement('div');
-        selectionDiv.setAttribute('id', 'selectionDiv');        
-
-        let colors = document.createElement('select');
-            let defaultOptionColor = document.createElement('option');
-            defaultOptionColor.innerText = "Color";
-            colors.append(defaultOptionColor);
-        colors.setAttribute('id','colorsOption');
-        for (let i = 0; i < item.color.length; i++) {
-            let colorsOption = document.createElement('option');
-            colorsOption.innerText = item.color[i];
-            colors.append(colorsOption);
-        }
-        
-        // passing selected color
-        colors.addEventListener('change',function(e){            
-            // console.log(e.target.value);
-            selectedColor = e.target.value;
-            storeInObject(selectedColor, selectedSize)   ;
-        });
-    
-
-        let sizes = document.createElement('select');
-        let defaultOption = document.createElement('option');
-            defaultOption.innerText = "Select Size";
-            sizes.append(defaultOption);
-        sizes.setAttribute('id','sizesOption');
-        for (let i = 0; i < item.sizes.length; i++) {
-            let sizesOption = document.createElement('option');
-            sizesOption.innerText = item.sizes[i];
-            sizes.append(sizesOption);
-        }
-
-        // passing selected size
-        sizes.addEventListener('change',function(e){            
-          // console.log(e.target.value);
-          selectedSize = e.target.value;
-          storeInObject(selectedColor, selectedSize, item);
-        });
-
-        let addTocartDiv = document.createElement('div');
-        addTocartDiv.setAttribute('id', 'addTocartDiv');
-
-        let addToCartBtn = document.createElement("button");
-        addToCartBtn.setAttribute('id','addToCartBtn');
-        addToCartBtn.innerHTML = "Add to Cart";
-
-        
-        
-        
-        addToCartBtn.addEventListener("click", function () {
-            storeInObject(selectedColor, selectedSize, item, buttonClicked=true);
-        });
-
-        selectionDiv.append(colors, sizes);
-        addTocartDiv.append(addToCartBtn);
-
-        card.append(img, priceDiv, brandName, selectionDiv,addTocartDiv);
-        displayProductDiv.append(card);
-    });    
-}
-
-
-//adding event listeners to basket
-let productBasket = document.getElementById('basket');
-productBasket.addEventListener('click', function(){
-    window.location.href = 'basket.html';
-});
-
-
-
-function storeInObject(selectedColor, selectedSize, item, buttonClicked){
-    // console.log(selectedColor);
-    // console.log(selectedSize);
-    // console.log(selectedColor, selectedSize, item.brand);
-
-    let product = {
-        brand: item.brand,
-        category: item.category,
-        color: selectedColor,
-        discount: item.discount,
-        fitting: item.fitting,
-        img: item.img,
-        price: item.price,
-        size: selectedSize
+let ShoesBagsWomen = [
+    {
+        brand: "GINGER",
+        category: "Shoes",
+        price: "1300",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['orange', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009866260-Pink-1000009866260_01-2100.jpg']
+    },
+    {
+        brand: "GINGER",
+        category: "Shoes",
+        price: "2695",
+        discount: "55",
+        fitting: "Regular Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009866285-Yellow-1000009866285_01-2100.jpg']
+    },
+    {
+        brand: "MELANGE ",
+        category: "Shoes",
+        price: "1564",
+        discount: "15",
+        fitting: "Regular Fit",
+        color: ['black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009865936-Black-1000009865936_01-2100.jpg']
+    },
+    {
+        brand: "MELANGE ",
+        category: "Shoes",
+        price: "999",
+        discount: "45",
+        fitting: "Regular Fit",
+        color: ['pink', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009864657-Pink-1000009864657_01-2100.jpg']
     }
 
-    if(selectedSize != undefined && selectedColor != undefined && buttonClicked){
-        let basket = JSON.parse(localStorage.getItem('basket'));
-        basket.push(product);
-        localStorage.setItem('basket',JSON.stringify(basket));
-    }    
-}
+]
 
-let variables = JSON.parse(localStorage.getItem('variables'));
-var subCategory = variables[variables.length-1];
-subCategory = subCategory.toLowerCase();
-console.log(subCategory);
-
-if(subCategory == 'tops'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'ethnicwear'){
-    showProducts(womenEthnicWear);
-}else if(subCategory == 'bottoms'){
-    showProducts(WomenBottoms);
-}else if(subCategory == 'topwear'){
-    showProducts(mensTopwear);
-}else if(subCategory == 'bottomwear'){
-    showProducts(menBottomwear);
-}else if(subCategory == 'activewear'){
-    showProducts(menActivewear);
-}else if(subCategory == 'girls clothing'){
-    showProducts(kidsGirls);
-}else if(subCategory == 'boys clothing'){
-    showProducts(kidsBoys);
-}else if(subCategory == 'men'){
-    showProducts(Shoes);
-}else if(subCategory == 'women'){
-    showProducts(womenBags);
-}else if(subCategory == 'boys'){
-    showProducts(Shoes);
-}
-
-localStorage.setItem('variables', JSON.stringify(variables));
-
-
-
-let sortingPanel = document.getElementById('sortingPanel');
-let priceWiseSorting = document.createElement('select');
-
-let defaultOption = document.createElement('option');
-    defaultOption.innerText = 'Price';
-let highToLow = document.createElement('option');    
-    highToLow.innerText = 'High to Low';   
-
-let lowToHigh = document.createElement('option');
-    lowToHigh.innerText = 'Low to High';
-    priceWiseSorting.append(defaultOption, highToLow, lowToHigh);
-
-    priceWiseSorting.addEventListener('change', function(event){
-        // console.log('xxxxcccc');
-        sortData(event.target.value);
-    });
-
-let brandWiseSorting = document.createElement('select');
-let defaultOptionDiscount = document.createElement('option');
-    defaultOptionDiscount.innerText = 'Discount';
-let highToLowDiscount = document.createElement('option');
-    highToLowDiscount.innerText = 'Max Discount';
-let lowToHighDiscount = document.createElement('option');
-    lowToHighDiscount.innerText = 'Low Discount';
-    brandWiseSorting.append(defaultOptionDiscount, highToLowDiscount, lowToHighDiscount);
-
-    brandWiseSorting.addEventListener('change', function(event){
-        // console.log('xxxxcccc');
-        sortData(event.target.value);
-    });
-
-sortingPanel.append(priceWiseSorting, brandWiseSorting);
-
-
-
-
-// let variables = JSON.parse(localStorage.getItem('variables'));
-
-function sortData(string){ 
-    // console.log('ggggg');
-    if(variables[variables.length-1].toLowerCase() == 'tops'){
-        // console.log(string == 'Max Discount');
-        if(string == 'High to Low'){
-            let sortedHighToLow = womenTopWear.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = womenTopWear.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = womenTopWear.sort(function(item1, item2){
-                console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = womenTopWear.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'ethnicwear'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = womenEthnicWear.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = womenEthnicWear.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = womenEthnicWear.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = womenEthnicWear.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'bottoms'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = WomenBottoms.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = WomenBottoms.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = WomenBottoms.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = WomenBottoms.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'topwear'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = mensTopwear.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = mensTopwear.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = mensTopwear.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = mensTopwear.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'bottomwear'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = menBottomwear.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = menBottomwear.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = menBottomwear.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = menBottomwear.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'activewear'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = menActivewear.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = menActivewear.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = menActivewear.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = menActivewear.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'girls clothing'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = kidsGirls.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = kidsGirls.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = kidsGirls.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = kidsGirls.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'boys clothing'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = kidsBoys.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = kidsBoys.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = kidsBoys.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = kidsBoys.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'men'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = Shoes.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = Shoes.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = Shoes.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = Shoes.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'women'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = womenBags.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = womenBags.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = womenBags.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = womenBags.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
-    }else if(variables[variables.length-1].toLowerCase() == 'boys'){
-        if(string == 'High to Low'){
-            let sortedHighToLow = Shoes.sort(function(item1, item2){
-                return item2.price - item1.price;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low to High'){
-            let sortedLowToHigh = Shoes.sort(function(item1, item2){
-                return item1.price - item2.price;
-            });    
-            showProducts(sortedLowToHigh);
-        }else if(string == 'Max Discount'){
-            let sortedHighToLow = Shoes.sort(function(item1, item2){
-                // console.log(item1.discount);
-                return item2.discount - item1.discount;
-            });    
-            showProducts(sortedHighToLow);
-        }else if(string == 'Low Discount'){
-            let sortedLowToHigh = Shoes.sort(function(item1, item2){
-                return item1.discount - item2.discount;
-            });    
-            showProducts(sortedLowToHigh);
-        }
+let ShoesBagsMen = [
+    {
+        brand: "FORCA",
+        category: "Shoes",
+        price: "782",
+        discount: "45",
+        fitting: "Regular Fit",
+        color: ['black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008416992-Blue-1000008416992_01-2100.jpg']
+    },
+    {
+        brand: "FORCA",
+        category: "Shoes",
+        price: "488",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008417042-Blue-1000008417042_01-2100.jpg']
+    },
+    {
+        brand: "FILA ",
+        category: "Shoes",
+        price: "",
+        discount: "45",
+        fitting: "Regular Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010208814-White-1000010208814_01-2100.jpg']
+    },
+    {
+        brand: "FILA ",
+        category: "Shoes",
+        price: "869",
+        discount: "45",
+        fitting: "Regular Fit",
+        color: ['brown', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008569118-Brown-1000008569118_01-2100.jpg']
+    },
+    {
+        brand: "FILA ",
+        category: "Shoes",
+        price: "584",
+        discount: "15",
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008217982-Pink-1000008217982_01-2100.jpg']
     }
+]
+let ShoesBagsBoys = [
+    {
+        brand: "PUMA",
+        category: "Shoes",
+        price: "515",
+        discount: "42",
+        fitting: "Regular Fit",
+        color: ['red', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009881907-Red-1000009881907_01-2100.jpg']
+    },
+    {
+        brand: "FAME",
+        category: "Shoes",
+        price: "554",
+        discount: "45",
+        fitting: "Regular Fit",
+        color: ['black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009881896-Black-1000009881896_01-2100.jpg']
+    },
+    {
+        brand: "PUMA",
+        category: "Shoes",
+        price: "454",
+        discount: "24",
+        fitting: "Regular Fit",
+        color: ['brown', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000006718096-20618-Brown-Tan-Tobacco-Brick-Almond-1000006718096-20618_01-2100.jpg']
+    },
+    {
+        brand: "FAME",
+        category: "Sandals",
+        price: "479",
+        discount: "22",
+        fitting: "Regular Fit",
+        color: ['red', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010102989-Red-1000010102989_01-2100.jpg']
+    },
+    {
+        brand: "PUMA",
+        category: "Sandals",
+        price: "411",
+        discount: "15",
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008398227-Blue-1000008398227_01-2100.jpg']
+    }
+]
 
-}
-
-// console.log(ShoesBagsWomen);
-
-
-
-
-
-// localStorage.setItem('variables', JSON.stringify(variables));
-
-
-
+let ShoesBagsGirls = [
+    {
+        brand: "FAME",
+        category: "Shoes",
+        price: "842",
+        discount: "35",
+        fitting: "Regular Fit",
+        color: ['pink', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007912007-Pink-1000007912007_01-2100.jpg']
+    },
+    {
+        brand: "PUMA",
+        category: "Shoes",
+        price: "624",
+        discount: "54",
+        fitting: "Regular Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007798410-White-1000007798410_01-2100.jpg']
+    },
+    {
+        brand: "FAME",
+        category: "Shoes",
+        price: "741",
+        discount: "15",
+        fitting: "Regular Fit",
+        color: ['blue', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008425534-Blue-1000008425534_01-2100.jpg']
+    },
+    {
+        brand: "PUMA",
+        category: "Shoes",
+        price: "653",
+        discount: "45",
+        fitting: "Regular Fit",
+        color: ['red', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009885879-Red-1000009885879_01-2100.jpg']
+    },
+    {
+        brand: "FAME",
+        category: "Shoes",
+        price: "438",
+        discount: "50",
+        fitting: "Regular Fit",
+        color: ['pink', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009888185-Purple-1000009888185_01-2100.jpg']
+    },
+    {
+        brand: "PUMA",
+        category: "Shoes",
+        price: "999",
+        discount: "25",
+        fitting: "Regular Fit",
+        color: ['golden', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img:['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008425199-Gold-1000008425199_01-2100.jpg']
+    }
+]
