@@ -120,6 +120,13 @@ signUpSignin.onmouseleave = function () {
 }
 
 
+//adding event listeners to basket
+let indexBasket = document.getElementById('basket');
+indexBasket.addEventListener('click', function(){
+    window.location.href = 'basket.html';
+});
+
+
 
 let carousel = document.getElementById('carousel');
 let carouselCounter = 0;

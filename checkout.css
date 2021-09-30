@@ -1,0 +1,106 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFFFFF;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 0.1em solid rgb(236, 237, 235);
+    /* border-color: white; */
+    width: 100%;
+    border-radius: 3%;
+}
+
+#checkoutContainer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1%;
+    padding: 3%;
+    margin: auto;
+    width: 80%;
+}
+
+#homeDeliveryAndClickCollect {
+    display: flex;
+    gap: 4%;
+    padding: 3%;
+    text-align: center;
+}
+
+#homeDeliveryAndClickCollect>div:nth-child(1), #homeDeliveryAndClickCollect>div:nth-child(2) {
+    border: 1px solid #FAA81E;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    cursor: pointer;
+    width: 50%;
+    justify-content: start;
+}
+
+#checkoutAddressType {
+    display: flex;
+    /* gap: 4%; */
+    padding: 2%;
+    text-align: center;
+}
+
+.textBoxInputWidth {
+    border: 2px solid rgb(230, 227, 227);
+    padding: 2%;
+    width: 43%;
+}
+
+#checkoutPayNowBtnPanel {
+    display: flex;
+    gap: 1%;
+}
+
+#payNow {
+    margin: auto;
+    border: none;
+    /* border: 1px solid black; */
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: #FAA81E;
+    color: white;
+}
+
+#checkoutTermsAndConditions img {
+    width: 25%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+#checkoutProductDiv {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+#checkoutProductDiv h4,
+#checkoutProductDiv h5 {
+    font-weight: 400;
+    font-size: 50%;
+}
+
+#checkoutProductDivImg img {
+    width: 60%;
+}
+
+#checkoutProductDivDetails {
+    margin: 0%;
+    width: 50%;
+}
+
+#checkoutProductDivDetails h4,
+#checkoutProductDivDetails h5 {
+    /* margin: 5%; */
+}

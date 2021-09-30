@@ -618,6 +618,15 @@ function showProducts(data) {
     });    
 }
 
+
+//adding event listeners to basket
+let productBasket = document.getElementById('basket');
+productBasket.addEventListener('click', function(){
+    window.location.href = 'basket.html';
+});
+
+
+
 function storeInObject(selectedColor, selectedSize, item, buttonClicked){
     // console.log(selectedColor);
     // console.log(selectedSize);
