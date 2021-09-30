@@ -1,62 +1,130 @@
-let para_1=document.getElementById("top");
-let offer=document.createElement("span")
-offer.innerText="Get the offer"
-offer.style.backgroundColor="#EC407A";
-let line_1=document.createElement("span");
-line_1.innerText="Get 300 Off on First Purchase of Rs.1,999 and Above. Code NEW300 | Shop for Rs. 2,999 & Get 15% Off. Code SHOP15";
+let basketItemsDiv = document.getElementById("basketItems");
+let offer = document.createElement("span");
+offer.innerText = "Get the offer"
+offer.style.backgroundColor = "#EC407A";
 
-let div=document.createElement("div");
-div.style.marginTop="20px"
-let offer_2=document.createElement("span");
-offer_2.innerText="Get the offer"
-offer_2.style.backgroundColor="#EC407A"
-let line_2=document.createElement("span");
-line_2.innerText="Additional 5% Cashback on HDFC Credit/Debit Card EMIs, max Rs 1,000/- & twice per month per card."
-let table=document.createElement("table")
-table.style.border="1px solid black"
-table.style.marginTop="20px";
-let heading_1=document.createElement("thead");
-heading_1.style.fontWeight="700"
-heading_1.textContent="item";
-heading_1.style.display="inline-block"
-let heading_2=document.createElement("thead");
-heading_2.style.fontWeight="700"
-heading_2.textContent="discription";
-heading_2.style.marginLeft="215px";
-heading_2.style.display="inline-block"
-let heading_3=document.createElement("thead");
-heading_3.style.fontWeight="700"
-heading_3.textContent="price";
-heading_3.style.marginLeft="300px";
-heading_3.style.display="inline-block"
-let heading_4=document.createElement("thead");
-heading_4.style.fontWeight="700"
-heading_4.textContent="quality";
-heading_4.style.marginLeft="185px";
-heading_4.style.display="inline-block"
-let heading_5=document.createElement("thead");
-heading_5.style.fontWeight="700"
-heading_5.textContent="quality";
-heading_5.style.marginLeft="185px";
-heading_5.style.display="inline-block"
-let heading_6=document.createElement("thead");
-heading_6.style.fontWeight="700"
-heading_6.textContent="Subtotal (1 item):Rs299"
-heading_6.style.marginLeft="185px";
-heading_6.style.display="inline-block"
-table.append(heading_1,heading_2,heading_3,heading_5,heading_6);
+let line_1 = document.createElement("span");
+line_1.innerText = "Get 300 Off on First Purchase of Rs.1,999 and Above. Code NEW300 | Shop for Rs. 2,999 & Get 15% Off. Code SHOP15";
+
+let basket = JSON.parse(localStorage.getItem('basket'));
+
+let basketTable = document.createElement("table")
+basketTable.style.border = "1px solid black"
+basketTable.style.marginTop = "20px";
+
+let tableRowHeading = document.createElement('tr');
+let tableHeadItem = document.createElement('th');
+    tableHeadItem.innerText = "Item";
+let tableHeadDesc = document.createElement('th');
+    tableHeadDesc.innerText = 'Description';
+let tableHeadPrice = document.createElement('th');
+    tableHeadPrice.innerText = 'Price';
+let tableHeadQuantity = document.createElement('th');
+    tableHeadQuantity.innerText = 'Quantity';
+let tableHeadTotalPrice = document.createElement('th');
+    tableHeadTotalPrice.innerText = 'Total Price';
+    tableRowHeading.append(tableHeadItem,tableHeadDesc,tableHeadPrice,tableHeadQuantity,tableHeadTotalPrice);
+
+basketTable.append(tableRowHeading);
+basketItemsDiv.append(basketTable);
+
+basket.forEach(function (element){
+    let basket = JSON.parse(localStorage.getItem('basket'));
+
+    let tableDataRow = document.createElement('tr');
+
+    let tableDataImg = document.createElement('td');
+    let img = document.createElement('img');
+        img.src = element.img[0];
+        tableDataImg.append(img);
+
+    let tableDataBrand = document.createElement('td');
+    let brand = document.createElement('h2');
+        brand.innerText = element.brand;
+        tableDataBrand.append(brand);
+    
+    let tableDataPrice = document.createElement('td');
+    let price = document.createElement('h3');
+        price.innerText = element.price;
+        tableDataPrice.append(price);
+
+    let tableDataQuantity = document.createElement('td');
+    let quantity = document.createElement('select');
+        quantity.innerText = '1';
+        tableDataQuantity.append(quantity);
+
+    let tableDataTotalPrice = document.createElement('td');
+    let totalPrice = document.createElement('h3');
+        totalPrice.innerText = element.price;
+        tableDataTotalPrice.append(totalPrice);
+
+    tableDataRow.append(tableDataImg,tableDataBrand,tableDataPrice,tableDataQuantity,tableDataTotalPrice);
+
+    basketTable.append(tableDataRow);
+    basketItemsDiv.append(basketTable);    
+    localStorage.setItem('basket',JSON.stringify(basket));
+});
+
+basketItemsDiv.append(basketTable);
+
+   
+
+localStorage.setItem('basket',JSON.stringify(basket));
 
 
-let Itmes_image=document.createElement("img");
-Itmes_image.src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007240054-3012-Red-Red-1000007240054-3012_01-345.jpg"
 
-Itmes_image.style.height="250px"
-Itmes_image.style.width="200px"
+// let div = document.createElement("div");
+// div.style.marginTop = "20px"
+// let offer_2 = document.createElement("span");
+// offer_2.innerText = "Get the offer"
+// offer_2.style.backgroundColor = "#EC407A"
+// let line_2 = document.createElement("span");
+// line_2.innerText = "Additional 5% Cashback on HDFC Credit/Debit Card EMIs, max Rs 1,000/- & twice per month per card."
+
+// let heading_1 = document.createElement("thead");
+// heading_1.style.fontWeight = "700"
+// heading_1.textContent = "item";
+// heading_1.style.display = "inline-block"
+// let heading_2 = document.createElement("thead");
+// heading_2.style.fontWeight = "700"
+// heading_2.textContent = "discription";
+// heading_2.style.marginLeft = "215px";
+// heading_2.style.display = "inline-block"
+// let heading_3 = document.createElement("thead");
+// heading_3.style.fontWeight = "700"
+// heading_3.textContent = "price";
+// heading_3.style.marginLeft = "300px";
+// heading_3.style.display = "inline-block"
+// let heading_4 = document.createElement("thead");
+// heading_4.style.fontWeight = "700"
+// heading_4.textContent = "quality";
+// heading_4.style.marginLeft = "185px";
+// heading_4.style.display = "inline-block"
+// let heading_5 = document.createElement("thead");
+// heading_5.style.fontWeight = "700"
+// heading_5.textContent = "quality";
+// heading_5.style.marginLeft = "185px";
+// heading_5.style.display = "inline-block"
+// let heading_6 = document.createElement("thead");
+// heading_6.style.fontWeight = "700"
+// heading_6.textContent = "Subtotal (1 item):Rs299"
+// heading_6.style.marginLeft = "185px";
+// heading_6.style.display = "inline-block"
 
 
 
-div.append(offer_2,line_2);
-para_1.append(offer,line_1,div,table,Itmes_image);
+
+
+let Itmes_image = document.createElement("img");
+Itmes_image.src = "https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007240054-3012-Red-Red-1000007240054-3012_01-345.jpg"
+
+Itmes_image.style.height = "250px"
+Itmes_image.style.width = "200px"
+
+
+
+div.append(offer_2, line_2);
+para_1.append(offer, line_1, div, table, Itmes_image);
 
 
 let womenTopWear = [
@@ -156,7 +224,7 @@ womenTopWear.forEach(function (el) {
 
 
 
-let cont = document.getElementById("cont");
+let cont = document.getElementById("container");
 let items = JSON.parse(localStorage.getItem('life_style'));
 items.forEach(function (el) {
     let div = document.createElement('div');
@@ -177,7 +245,7 @@ items.forEach(function (el) {
     color.innerText = el.color;
     let sizes = document.createElement('p');
     sizes.innerText = el.sizes;
-  
+
     div.append(image, price, discount, brand, category, fitting);
     cont.append(div);
 });
