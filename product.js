@@ -1,4 +1,5 @@
 
+
 let womenTopWear = [
     {
         brand: "BOSSINI",
@@ -106,7 +107,7 @@ let womenEthnicWear = [
     {
         brand: "MELANGE",
         category: "Kurta",
-        price: "1,019",
+        price: "1019",
         discount: "40",
         fitting: "Straight Fit",
         color: ['red', 'black', 'green'],
@@ -528,9 +529,15 @@ let Shoes = [
 ];
 
 
+if(localStorage.getItem('basket') === null){
+    localStorage.setItem('basket', JSON.stringify([]));
+}
+
 
 let displayProductDiv = document.getElementById('displayProductDiv');
 
+let selectedColor = "";
+let selectedSize = "";
 
 function showProducts(data) {
     displayProductDiv.innerHTML = null;
@@ -553,12 +560,23 @@ function showProducts(data) {
         selectionDiv.setAttribute('id', 'selectionDiv');        
 
         let colors = document.createElement('select');
+            let defaultOptionColor = document.createElement('option');
+            defaultOptionColor.innerText = "Color";
+            colors.append(defaultOptionColor);
         colors.setAttribute('id','colorsOption');
         for (let i = 0; i < item.color.length; i++) {
             let colorsOption = document.createElement('option');
             colorsOption.innerText = item.color[i];
             colors.append(colorsOption);
         }
+        
+        // passing selected color
+        colors.addEventListener('change',function(e){            
+            // console.log(e.target.value);
+            selectedColor = e.target.value;
+            storeInObject(selectedColor, selectedSize)   ;
+        });
+    
 
         let sizes = document.createElement('select');
         let defaultOption = document.createElement('option');
@@ -571,6 +589,13 @@ function showProducts(data) {
             sizes.append(sizesOption);
         }
 
+        // passing selected size
+        sizes.addEventListener('change',function(e){            
+          // console.log(e.target.value);
+          selectedSize = e.target.value;
+          storeInObject(selectedColor, selectedSize, item);
+        });
+
         let addTocartDiv = document.createElement('div');
         addTocartDiv.setAttribute('id', 'addTocartDiv');
 
@@ -578,9 +603,11 @@ function showProducts(data) {
         addToCartBtn.setAttribute('id','addToCartBtn');
         addToCartBtn.innerHTML = "Add to Cart";
 
-
+        
+        
+        
         addToCartBtn.addEventListener("click", function () {
-            // addtocartbtn(item);
+            storeInObject(selectedColor, selectedSize, item, buttonClicked=true);
         });
 
         selectionDiv.append(colors, sizes);
@@ -588,6 +615,70 @@ function showProducts(data) {
 
         card.append(img, priceDiv, brandName, selectionDiv,addTocartDiv);
         displayProductDiv.append(card);
-    });
+    });    
 }
-showProducts(Shoes);
+
+
+//adding event listeners to basket
+let productBasket = document.getElementById('basket');
+productBasket.addEventListener('click', function(){
+    window.location.href = 'basket.html';
+});
+
+
+
+function storeInObject(selectedColor, selectedSize, item, buttonClicked){
+    // console.log(selectedColor);
+    // console.log(selectedSize);
+    // console.log(selectedColor, selectedSize, item.brand);
+
+    let product = {
+        brand: item.brand,
+        category: item.category,
+        color: selectedColor,
+        discount: item.discount,
+        fitting: item.fitting,
+        img: item.img,
+        price: item.price,
+        size: selectedSize
+    }
+
+    if(selectedSize != undefined && selectedColor != undefined && buttonClicked){
+        let basket = JSON.parse(localStorage.getItem('basket'));
+        basket.push(product);
+        localStorage.setItem('basket',JSON.stringify(basket));
+    }    
+}
+
+let variables = JSON.parse(localStorage.getItem('variables'));
+var subCategory = variables[variables.length-1];
+subCategory = subCategory.toLowerCase();
+// console.log(subCategory);
+
+if(subCategory == 'tops'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'ethnicwear'){
+    showProducts(womenEthnicWear);
+}else if(subCategory == 'ethnicwear'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'bottoms'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'dresses & jumpsuits'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'lingerie & nightwear'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'sportswear'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'wfh edit'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'beauty'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'watches'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'sunglases'){
+    showProducts(womenTopWear);
+}else if(subCategory == 'footwear & bags'){
+    showProducts(womenTopWear);
+}
+
+localStorage.setItem('variables', JSON.stringify(variables));

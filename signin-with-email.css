@@ -1,0 +1,172 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFFFFF;
+}
+
+#signin-with-email {
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    
+    padding: 2%;
+
+    width: 50%;
+    height: auto;
+
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+img {
+    width: 50%;
+    height: 40%;
+
+}
+
+.colorGray {
+    color: lightgray;
+}
+.colorOrange {
+    color: #FAA81E;
+}
+.textAlignCenter {
+    text-align: center;
+}
+
+.inputBox {
+    border: 2px solid lightgray;
+    padding: 2%;
+    
+    width: 50%;
+    height: 1.5em;
+}
+
+.bottomPart {
+    padding: 3%
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 0.1em solid rgb(236, 237, 235);
+    /* border-color: white; */
+    width: 100%;
+    border-radius: 3%;
+}
+
+#signin {
+    margin: auto;
+    border: none;
+    /* border: 1px solid black; */
+
+    width: 50%;
+    height: auto;
+
+    cursor: pointer;
+
+    padding: 3%;
+    border-radius: 2%;
+    
+    background-color: #FAA81E;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .outerBox{
+    width:auto;
+   
+    padding:50px;
+}
+.innerBox{
+    width:400px;
+    display:grid;
+    border:1px ;
+    margin:auto;
+}
+
+
+
+.inBox{
+    border:1px ;
+    
+    width:300px;
+    margin:auto;
+}
+
+.fecebookBox{
+    /* display:flex; */
+    display: inline-block;
+    background-color:rgb(77, 77, 146);
+    margin:auto;
+    padding:5px 50px 5px 80px;
+    width:200px;
+}
+/* .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  } */
+
+  .fbBox{
+      width:250px;
+      height:50px;
+      
+  }
+.email{
+    font-size:12px
+}
+.pass{
+    font-size:12px
+}
+.passBox{
+    width:200px;
+    height:50px;
+}
+.underBox{
+    display:flex;
+}
+
+.underBox>div{
+    color:orange;
+    font-size:12px;
+    padding:24px 0 20px 40px;
+}
+.underBox>form{
+    padding:20px 30px 20px 0;
+    font-size:12px;
+}
+.block {
+    display: block;
+    width:100%;
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 14px 28px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+  } */
