@@ -1,0 +1,140 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFFFFF;
+}
+
+#signup-signin-card {
+    /* margin: auto; */
+    margin-top: 5%;
+    margin-left: 25%;
+    
+    padding: 5%;
+
+    width: 50%;
+    height: 30%;
+
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.colorGray {
+    color: lightgray;
+}
+.colorOrange {
+    color: #FAA81E;
+}
+
+
+input {
+    border: 2px solid #FAA81E;
+    padding: 2%;
+    
+    width: 43%;
+}
+
+
+#bottomPart {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    width: 50%;
+
+    padding: 2%;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 0.1em solid rgb(236, 237, 235);
+    /* border-color: white; */
+    width: 100%;
+    border-radius: 3%;
+}
+
+#continueBtn {
+    margin: auto;
+    border: none;
+    /* border: 1px solid black; */
+
+    width: 100%;
+    height: auto;
+
+    cursor: pointer;
+
+    padding: 4%;
+    border-radius: 2%;
+    
+    background-color: #FAA81E;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .mainInputBox{
+    padding:150px 20px 50px 20px;
+    width:1500px;
+    display:flex;
+}
+.adjustBox{
+    background-color:rgb(253, 253, 252);
+    width:400px;
+    display:grid;
+    margin: auto;
+    
+    border: 3px ;
+    padding: 10px;
+      
+}
+
+.boxMobile{
+    display:flex;
+    border:1px solid orange;
+    padding:10px;
+}
+
+.insideBox1{
+    display:flex;
+    padding: 10px 10px 10px 0;
+}
+
+.insideBox2{
+    display:flex;
+    padding:20px 50px 20px 0;
+    border:1px solid pink;
+}
+.button {
+    background-color: orange;
+    border: none ;
+    color:white;
+    padding: 7px 26px 7px 26px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  } */
