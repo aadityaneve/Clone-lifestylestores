@@ -107,7 +107,7 @@ let womenEthnicWear = [
     {
         brand: "MELANGE",
         category: "Kurta",
-        price: "1,019",
+        price: "1019",
         discount: "40",
         fitting: "Straight Fit",
         color: ['red', 'black', 'green'],
@@ -634,7 +634,7 @@ function storeInObject(selectedColor, selectedSize, item, buttonClicked){
         size: selectedSize
     }
 
-    if(selectedSize !== undefined && selectedColor != undefined && buttonClicked){
+    if(selectedSize != undefined && selectedColor != undefined && buttonClicked){
         let basket = JSON.parse(localStorage.getItem('basket'));
         basket.push(product);
         localStorage.setItem('basket',JSON.stringify(basket));
