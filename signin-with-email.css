@@ -1,4 +1,102 @@
-.outerBox{
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFFFFF;
+}
+
+#signin-with-email {
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    
+    padding: 2%;
+
+    width: 50%;
+    height: auto;
+
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+img {
+    width: 50%;
+    height: 40%;
+
+}
+
+.colorGray {
+    color: lightgray;
+}
+.colorOrange {
+    color: #FAA81E;
+}
+.textAlignCenter {
+    text-align: center;
+}
+
+.inputBox {
+    border: 2px solid lightgray;
+    padding: 2%;
+    
+    width: 50%;
+    height: 1.5em;
+}
+
+.bottomPart {
+    padding: 3%
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 0.1em solid rgb(236, 237, 235);
+    /* border-color: white; */
+    width: 100%;
+    border-radius: 3%;
+}
+
+#signin {
+    margin: auto;
+    border: none;
+    /* border: 1px solid black; */
+
+    width: 50%;
+    height: auto;
+
+    cursor: pointer;
+
+    padding: 3%;
+    border-radius: 2%;
+    
+    background-color: #FAA81E;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .outerBox{
     width:auto;
    
     padding:50px;
@@ -71,4 +169,4 @@
     font-size: 12px;
     cursor: pointer;
     text-align: center;
-  }
+  } */
