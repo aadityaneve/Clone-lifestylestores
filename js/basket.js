@@ -89,7 +89,7 @@ basket.forEach(function (element){
         totalPrice.innerText = "₹ "+Number(element.price)*Number(event.target.value);
         // console.log(event.target.value);
         // console.log(element.price);        
-        calculateTotal(event.target.value*element.price, Number(event.target.value-1));
+        calculateTotal(element.price*event.target.value, Number(event.target.value-1));//select: Number(event.target.value-1)
     });
 
     tableDataRow.append(tableDataImg,tableDataBrand,tableDataPrice,tableDataQuantity,tableDataTotalPrice);
@@ -107,20 +107,20 @@ basketItemsDiv.append(basketTable);
 
 
 let totalAmount = 0;
-let totalProducts = 1;
+let totalProducts = 0;
 
 let checkoutPanel = document.getElementById('checkoutPanel');
 let checkoutHeading = document.createElement('div');
-console.log(totalProducts);
+// console.log(totalProducts);
 basket.forEach(function (element){
-    totalAmount+=Number(element.price)*totalProducts;
+    totalAmount+=Number(element.price)+totalProducts;
     // console.log(totalAmount);
 });
 
-function calculateTotal(totalProductsPrice, extraProducts=0){
-    totalAmount+=totalProductsPrice;
+function calculateTotal(totalProductsPrice, extraProducts){
+    totalAmount+=totalProductsPrice*extraProducts-1;
     // console.log(totalAmount);
-    subTotal.innerText = 'Subtotal ('+(basket.length+=extraProducts)+" item):"+" ₹ "+totalAmount;
+    subTotal.innerText = 'Subtotal ('+(basket.length+=extraProducts)+" item):"+" ₹ "+(totalAmount);
 }
 
 let subTotal = document.createElement('div');
