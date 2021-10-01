@@ -122,6 +122,26 @@ signUpSignin.onmouseleave = function () {
     signUpSignin.style.color = 'black';
 }
 
+signUpSignin.addEventListener('click', function (){
+    
+});
+
+
+function displayUserNameOnNav() {
+    // navbar user printing if user is signed in 
+    let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+    let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
+
+    if(isSignedIn[isSignedIn.length-1] == true){
+        // console.log(userLoginDetails[(Object.keys(userLoginDetails).length)-1]);
+        // userLoginDetails[(Object.keys(userLoginDetails).length)-1].email
+        signUpSignin.innerHTML = '<strong>'+userLoginDetails[(Object.keys(userLoginDetails).length)-1].email+'</strong>'   
+    }
+    localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
+    localStorage.setItem('userLoginDetails',JSON.stringify(userLoginDetails));
+}
+
+
 
 //adding event listeners to basket
 let indexBasket = document.getElementById('basket');

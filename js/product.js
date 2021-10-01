@@ -652,9 +652,21 @@ function showProducts(data) {
 
         let addToCartBtn = document.createElement("button");
         addToCartBtn.setAttribute('id','addToCartBtn');
-        addToCartBtn.innerHTML = "Add to Cart";
+        addToCartBtn.innerHTML = "<strong>Add to Cart</strong>";
 
-        
+        // products added text inside button
+        addToCartBtn.addEventListener('click', function (){
+            addToCartBtn.innerHTML = '<strong> ✓ Added</strong>';
+        });
+
+        // #FAA81E - original color
+        // add to cart button color change after mouse hover
+        addToCartBtn.addEventListener('mouseenter', function (){
+            addToCartBtn.setAttribute('style','background-color: #fdb944');
+        });
+        addToCartBtn.addEventListener('mouseleave', function (){
+            addToCartBtn.setAttribute('style','background-color: #FAA81E');
+        });
         
         
         addToCartBtn.addEventListener("click", function () {
@@ -1034,13 +1046,20 @@ function sortData(string){
 
 }
 
-// console.log(ShoesBagsWomen);
+// body onload function to get user name on nav bar
+function displayUserNameOnNav() {
+    // navbar user printing if user is signed in 
+    let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+    let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
 
-
-
-
-
-// localStorage.setItem('variables', JSON.stringify(variables));
+    if(isSignedIn[isSignedIn.length-1] == true){
+        // console.log(userLoginDetails[(Object.keys(userLoginDetails).length)-1]);
+        // userLoginDetails[(Object.keys(userLoginDetails).length)-1].email
+        signUpSignin.innerHTML = '<strong>'+userLoginDetails[(Object.keys(userLoginDetails).length)-1].email+'</strong>'   
+    }
+    localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
+    localStorage.setItem('userLoginDetails',JSON.stringify(userLoginDetails));
+}
 
 
 
