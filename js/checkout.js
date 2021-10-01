@@ -49,8 +49,29 @@ let checkoutTotal = document.createElement('h3');
 // pay now button direct to success.html
 let payNowBtn = document.getElementById('payNow');
     payNowBtn.addEventListener('click', function (){
+        // let basket = JSON.parse(localStorage.getItem('basket'));
+        // window.localStorage.clear();
+        localStorage.removeItem("basket");
+        // localStorage.setItem('basket',JSON.stringify(basket));
         window.location.href = 'success.html';
     });
 
 
 localStorage.setItem('basket',JSON.stringify(basket));
+
+// home delivery and click&collect button onclick color change 
+let homeDeliveryBtn = document.getElementById('homeDeliveryBtn');
+let clickAndCollectBtn = document.getElementById('clickAndCollectBtn');
+
+    homeDeliveryBtn.addEventListener('click', function (){
+        homeDeliveryBtn.setAttribute('style','background-color: #FAA81E;');
+        clickAndCollectBtn.setAttribute('style','backgournd-color: white;');
+    });
+
+    clickAndCollectBtn.addEventListener('click', function (){
+        homeDeliveryBtn.setAttribute('style','backgournd-color: white;');
+        clickAndCollectBtn.setAttribute('style','background-color: #FAA81E;');
+    });
+    
+
+
