@@ -9,7 +9,7 @@ line_1.innerText = "Get 300 Off on First Purchase of Rs.1,999 and Above. Code NE
 let basket = JSON.parse(localStorage.getItem('basket'));
 
 let basketTable = document.createElement("table")
-basketTable.style.border = "1px solid black"
+// basketTable.style.border = "1px solid black";
 basketTable.style.marginTop = "20px";
 
 
@@ -90,7 +90,11 @@ basket.forEach(function (element){
 
     tableDataRow.append(tableDataImg,tableDataBrand,tableDataPrice,tableDataQuantity,tableDataTotalPrice);
 
-    basketTable.append(tableDataRow);
+    // horizontal row after every row
+    let hr = document.createElement('hr');
+
+    basketTable.append(tableDataRow, hr);
+
     basketItemsDiv.append(basketTable);    
     localStorage.setItem('basket',JSON.stringify(basket));
 });
@@ -119,16 +123,20 @@ let subTotal = document.createElement('div');
     subTotal.innerText = 'Subtotal ('+basket.length+" item):"+" ₹ "+totalAmount;
     subTotal.setAttribute('style','font-weight: 900; text-align: center;');
 
-let addToCartBtn = document.createElement("button");
-    addToCartBtn.setAttribute('id','addToCartBtn');
-    addToCartBtn.innerHTML = "<strong>Checkout Now</strong>";
+let checkOutNowBtn = document.createElement("button");
+checkOutNowBtn.setAttribute('id','addToCartBtn');
+checkOutNowBtn.innerHTML = "<strong>Checkout Now</strong>";
+
+checkOutNowBtn.addEventListener("click",function(){
+    window.location.href="checkout.html";
+});
 
 let hr1 = document.createElement('hr');
 let hr2 = document.createElement('hr');
 let hr3 = document.createElement('hr');
 
 checkoutHeading.append(subTotal);
-checkoutPanel.append(hr1, checkoutHeading, hr2, addToCartBtn, hr3);
+checkoutPanel.append(hr1, checkoutHeading, hr2, checkOutNowBtn, hr3);
 
 
 

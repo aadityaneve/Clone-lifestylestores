@@ -61,6 +61,7 @@ men.onmouseenter = function () {
             let variables = JSON.parse(localStorage.getItem('variables'));
             variables.push(h5.innerText);
             localStorage.setItem('variables',JSON.stringify(variables));
+            window.location.href = 'product.html';
         });
         categories.append(h5);
     });
@@ -82,6 +83,7 @@ kids.onmouseenter = function () {
             let variables = JSON.parse(localStorage.getItem('variables'));
             variables.push(h5.innerText);
             localStorage.setItem('variables',JSON.stringify(variables));
+            window.location.href = 'product.html';
         });
         categories.append(h5);
     });
@@ -103,6 +105,7 @@ shoesAndBags.onmouseenter = function () {
             let variables = JSON.parse(localStorage.getItem('variables'));
             variables.push(h5.innerText);
             localStorage.setItem('variables',JSON.stringify(variables));
+            window.location.href = 'product.html';
         });
         categories.append(h5);
     });
@@ -118,6 +121,13 @@ signUpSignin.onmouseenter = function () {
 signUpSignin.onmouseleave = function () {
     signUpSignin.style.color = 'black';
 }
+
+
+//adding event listeners to basket
+let indexBasket = document.getElementById('basket');
+indexBasket.addEventListener('click', function(){
+    window.location.href = 'basket.html';
+});
 
 
 
