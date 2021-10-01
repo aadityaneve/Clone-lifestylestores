@@ -1,3 +1,7 @@
+
+// if user not loggined divert page to signup or signin page
+
+
 let basketItemsDiv = document.getElementById("basketItems");
 let offer = document.createElement("span");
 offer.innerText = "Get the offer"

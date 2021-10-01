@@ -652,9 +652,21 @@ function showProducts(data) {
 
         let addToCartBtn = document.createElement("button");
         addToCartBtn.setAttribute('id','addToCartBtn');
-        addToCartBtn.innerHTML = "Add to Cart";
+        addToCartBtn.innerHTML = "<strong>Add to Cart</strong>";
 
-        
+        // products added text inside button
+        addToCartBtn.addEventListener('click', function (){
+            addToCartBtn.innerHTML = '<strong> ✓ Added</strong>';
+        });
+
+        // #FAA81E - original color
+        // add to cart button color change after mouse hover
+        addToCartBtn.addEventListener('mouseenter', function (){
+            addToCartBtn.setAttribute('style','background-color: #fdb944');
+        });
+        addToCartBtn.addEventListener('mouseleave', function (){
+            addToCartBtn.setAttribute('style','background-color: #FAA81E');
+        });
         
         
         addToCartBtn.addEventListener("click", function () {

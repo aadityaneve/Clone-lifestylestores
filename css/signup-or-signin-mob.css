@@ -5,7 +5,7 @@ body {
 
 #signup-signin-card {
     /* margin: auto; */
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 25%;
     
     padding: 5%;
@@ -68,7 +68,10 @@ hr {
     color: white;
 }
 
-
+a {
+    text-decoration: none;
+    color: #FAA81E;
+}
 
 
 
