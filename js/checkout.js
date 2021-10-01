@@ -58,3 +58,20 @@ let payNowBtn = document.getElementById('payNow');
 
 
 localStorage.setItem('basket',JSON.stringify(basket));
+
+// home delivery and click&collect button onclick color change 
+let homeDeliveryBtn = document.getElementById('homeDeliveryBtn');
+let clickAndCollectBtn = document.getElementById('clickAndCollectBtn');
+
+    homeDeliveryBtn.addEventListener('click', function (){
+        homeDeliveryBtn.setAttribute('style','background-color: #FAA81E;');
+        clickAndCollectBtn.setAttribute('style','backgournd-color: white;');
+    });
+
+    clickAndCollectBtn.addEventListener('click', function (){
+        homeDeliveryBtn.setAttribute('style','backgournd-color: white;');
+        clickAndCollectBtn.setAttribute('style','background-color: #FAA81E;');
+    });
+    
+
+
