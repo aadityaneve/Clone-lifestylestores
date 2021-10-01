@@ -131,12 +131,25 @@ function displayUserNameOnNav() {
     // navbar user printing if user is signed in 
     let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
     let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
+    let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length)-1].email;
+    let userName = "";
+    // console.log((userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length);
+    for(let i=0;i<(userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length;i++){
+        console.log('ttt');
+        if(userEmail[i] == '@'){
+            break;
+        }else{
+            userName+=userEmail[i];
+            console.log(userName);
+        }
+    }
 
     if(isSignedIn[isSignedIn.length-1] == true){
         // console.log(userLoginDetails[(Object.keys(userLoginDetails).length)-1]);
         // userLoginDetails[(Object.keys(userLoginDetails).length)-1].email
-        signUpSignin.innerHTML = '<strong>'+userLoginDetails[(Object.keys(userLoginDetails).length)-1].email+'</strong>'   
+        signUpSignin.innerHTML = '<strong>'+userName+'</strong>'   
     }
+    signUpSignin.setAttribute('style','text-aligh: center; margin-left: 7%; margin-right: 7%;');
     localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
     localStorage.setItem('userLoginDetails',JSON.stringify(userLoginDetails));
 }
