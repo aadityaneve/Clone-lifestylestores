@@ -1,3 +1,7 @@
+
+// if user not loggined divert page to signup or signin page
+
+
 let basketItemsDiv = document.getElementById("basketItems");
 let offer = document.createElement("span");
 offer.innerText = "Get the offer"
@@ -127,8 +131,31 @@ let checkOutNowBtn = document.createElement("button");
 checkOutNowBtn.setAttribute('id','addToCartBtn');
 checkOutNowBtn.innerHTML = "<strong>Checkout Now</strong>";
 
-checkOutNowBtn.addEventListener("click",function(){
-    window.location.href="checkout.html";
+// creating local storage for isSignedIN
+if(localStorage.getItem('isSignedIn') === null){
+    localStorage.setItem('isSignedIn', JSON.stringify([]));
+}
+let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+if(isSignedIn[isSignedIn.length-1] != true){
+    isSignedIn.push(false);
+}
+localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
+
+checkOutNowBtn.addEventListener("click",function(){    
+
+    let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+    // checking if user has signed in or not
+    // console.log(Object.keys(isSignedIn).length);
+    // console.log(isSignedIn[isSignedIn.length-1]);
+    if(Object.keys(isSignedIn).length != 0 && isSignedIn[isSignedIn.length-1] == true){
+        // console.log('kujhkjghkj');
+        window.location.href="checkout.html";
+    }else{
+        alert('Please SignUp First.');
+        window.location.href = 'signup-or-signin-mob.html';
+        // window.location.href = 'signin-with-email.html';
+    }    
+    localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
 });
 
 let hr1 = document.createElement('hr');
@@ -141,6 +168,39 @@ checkoutPanel.append(hr1, checkoutHeading, hr2, checkOutNowBtn, hr3);
 
 
 localStorage.setItem('basket',JSON.stringify(basket));
+
+
+
+function displayUserNameOnNav() {
+    // navbar user printing if user is signed in 
+    let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+    let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
+    let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length)-1].email;
+    let userName = "";
+    // console.log((userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length);
+    for(let i=0;i<(userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length;i++){
+        console.log('ttt');
+        if(userEmail[i] == '@'){
+            break;
+        }else{
+            userName+=userEmail[i];
+            console.log(userName);
+        }
+    }
+
+    if(isSignedIn[isSignedIn.length-1] == true){
+        // console.log(userLoginDetails[(Object.keys(userLoginDetails).length)-1]);
+        // userLoginDetails[(Object.keys(userLoginDetails).length)-1].email
+        signUpSignin.innerHTML = '<strong>'+userName+'</strong>'   
+    }
+    signUpSignin.setAttribute('style','text-aligh: center; margin-left: 7%; margin-right: 7%;');
+    localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
+    localStorage.setItem('userLoginDetails',JSON.stringify(userLoginDetails));
+}
+
+
+
+
 
 
 // let div = document.createElement("div");
