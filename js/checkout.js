@@ -46,5 +46,11 @@ let checkoutTotal = document.createElement('h3');
     checkoutTotalDiv.append(checkoutTotal);
 
 
+// pay now button direct to success.html
+let payNowBtn = document.getElementById('payNow');
+    payNowBtn.addEventListener('click', function (){
+        window.location.href = 'success.html';
+    });
+
 
 localStorage.setItem('basket',JSON.stringify(basket));

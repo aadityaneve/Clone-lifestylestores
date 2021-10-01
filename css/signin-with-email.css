@@ -118,18 +118,18 @@ hr {
 }
 
 .fecebookBox{
-    /* display:flex; */
+     display:flex; 
     display: inline-block;
     background-color:rgb(77, 77, 146);
     margin:auto;
     padding:5px 50px 5px 80px;
     width:200px;
 }
-/* .column {
+ .column {
     float: left;
     width: 33.33%;
     padding: 5px;
-  } */
+  } 
 
   .fbBox{
       width:250px;

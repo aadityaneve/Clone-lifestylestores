@@ -1,3 +1,7 @@
+
+// if user not loggined divert page to signup or signin page
+
+
 let basketItemsDiv = document.getElementById("basketItems");
 let offer = document.createElement("span");
 offer.innerText = "Get the offer"
@@ -127,8 +131,31 @@ let checkOutNowBtn = document.createElement("button");
 checkOutNowBtn.setAttribute('id','addToCartBtn');
 checkOutNowBtn.innerHTML = "<strong>Checkout Now</strong>";
 
-checkOutNowBtn.addEventListener("click",function(){
-    window.location.href="checkout.html";
+// creating local storage for isSignedIN
+if(localStorage.getItem('isSignedIn') === null){
+    localStorage.setItem('isSignedIn', JSON.stringify([]));
+}
+let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+if(isSignedIn[isSignedIn.length-1] != true){
+    isSignedIn.push(false);
+}
+localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
+
+checkOutNowBtn.addEventListener("click",function(){    
+
+    let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+    // checking if user has signed in or not
+    // console.log(Object.keys(isSignedIn).length);
+    // console.log(isSignedIn[isSignedIn.length-1]);
+    if(Object.keys(isSignedIn).length != 0 && isSignedIn[isSignedIn.length-1] == true){
+        // console.log('kujhkjghkj');
+        window.location.href="checkout.html";
+    }else{
+        alert('Please SignUp First.');
+        window.location.href = 'signup-or-signin-mob.html';
+        // window.location.href = 'signin-with-email.html';
+    }    
+    localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
 });
 
 let hr1 = document.createElement('hr');
@@ -141,6 +168,28 @@ checkoutPanel.append(hr1, checkoutHeading, hr2, checkOutNowBtn, hr3);
 
 
 localStorage.setItem('basket',JSON.stringify(basket));
+
+
+
+// body onload function to get user name on nav bar
+function displayUserNameOnNav() {
+    // navbar user printing if user is signed in 
+    let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
+    let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
+
+    if(isSignedIn[isSignedIn.length-1] == true){
+        // console.log(userLoginDetails[(Object.keys(userLoginDetails).length)-1]);
+        // userLoginDetails[(Object.keys(userLoginDetails).length)-1].email
+        signUpSignin.innerHTML = '<strong>'+userLoginDetails[(Object.keys(userLoginDetails).length)-1].email+'</strong>'   
+    }
+    localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
+    localStorage.setItem('userLoginDetails',JSON.stringify(userLoginDetails));
+}
+
+
+
+
+
 
 
 // let div = document.createElement("div");
