@@ -3,6 +3,24 @@ body {
     background-color: #FFFFFF;
 }
 
+#topHeading {
+    margin: auto;
+    width: 80%;
+}
+
+#topHeading h4 {
+    font-weight: 500;
+}
+
+#offer1 {
+    background-color: rgb(245, 163, 176);
+    color: white;
+    padding: 0.3em;
+
+    cursor: pointer;
+    font-weight: 500;
+}
+
 #basketItems {
     margin: auto;
     width: 80%;
