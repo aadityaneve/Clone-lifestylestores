@@ -90,3 +90,18 @@ img {
     background-color: #FAA81E;
     color: white;
 }
+
+#outerPartSortingPanel {
+    background-color: #F7F8F7;
+}
+
+#sortingPanel {
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+}
+
+#sortingPanel select {
+    padding: 1%;
+    border: 1px solid #F7F8F7;
+}

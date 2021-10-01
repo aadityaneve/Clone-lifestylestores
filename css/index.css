@@ -69,6 +69,7 @@ h1 {
 nav a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 #topBar a {

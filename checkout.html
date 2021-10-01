@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+
+
+    <div id="checkoutTopBar">
+
+    </div>
+
+    <div id="checkoutContainer">
+        <div>
+            <h1>Select a shipping method</h1>
+            <div id="homeDeliveryAndClickCollect">
+                <div>Home Delivery</div>
+                <div>Click & Collect</div>
+            </div>
+            <h2>Add your shipping address</h2>
+            <h3>Full Name</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Enter your full name" required>
+
+            <h3>Mobile Number</h3>
+            <input class="textBoxInputWidth" type="tel" placeholder="Enter your mobile number" required>
+
+            <h3>Pincode</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Enter your Pincode" required>
+
+            <h3>City</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Select your City or Town" required>
+
+            <h3>State</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Enter Building Name" required>
+
+            <h3>Building name or number</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Enter Building Name" required>
+
+            <h3>Street name or number</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Flat/House number, Floor, Building" required>
+
+            <h3>Landmark</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Landmark" required>
+
+            <h3>Address Type</h3>
+            <div id="checkoutAddressType">
+                <input type="radio" name="add"><span>Home</span></input>
+                <input type="radio" name="add"><span>Office</span></input>
+            </div>
+            <hr>
+
+            <h1>Select a payment method</h1>
+            <div>
+                <input class="" name="card" type="radio"><span>Credit Card</span>
+                <input class="" name="card" type="radio"><span>Debit Card</span>
+            </div>
+            <h3>Card Number</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Enter your 16 digit card number" required>
+
+            <h3>Name on Card</h3>
+            <input class="textBoxInputWidth" type="text" placeholder="Name on card" required>
+
+            <h3>Expiry Date</h3>
+            <input type="date" placeholder="dd-mm-yyyy">
+
+            <div>
+                <input type="checkbox"><span>Save this card for a faster checkout experience</span>
+            </div>
+
+            <h3>Biling Address</h3>
+            <div>
+                <input type="checkbox"><span>Is billing address the same as shipping address?</span>
+            </div>
+
+            <div id="checkoutPayNowBtnPanel">
+                <h6>By clicking on Proceed to Payment, you agree to our Terms and Conditions</h6>
+                <button id="payNow">PAYNOW</button>
+            </div>
+
+            <div id="checkoutTermsAndConditions">
+                <img src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png" alt="">
+                <h5>
+                    Your credit card details are securely encrypted and passed directly to our PCI DSS 
+                    compliant Payment Gateway for processing. We only store your credit card's last 
+                    4 digits and the expiration date. Your traffic to this page is secured using 
+                    either a 256-bit or 128-bit SSL certificate depending on your browser version.
+                </h5>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <div>Your order summary</div>
+                <hr>
+                <div id="checkoutProductDiv">
+                    <div id="checkoutProductDivImg"></div>
+                    <div>
+                        <div id="checkoutProductDivDetails">
+                            <!-- <div id="checkoutQuantityAndPrice"></div> -->
+                        </div>                                                
+                    </div>                    
+                </div>
+                <hr>
+                <div id="checkoutSubtotalDiv"></div>
+                <hr>
+                <div id="checkoutTotalDiv"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; $year RNA Intellectual Property Limited.
+
+        Privacy Policy - Terms of Use - Terms & Conditions
+    </footer>
+
+
+    <script src="./js/checkout.js"></script>
+</body>
+
+</html>

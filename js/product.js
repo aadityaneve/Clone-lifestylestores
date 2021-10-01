@@ -1,5 +1,8 @@
 
 
+
+
+// daya data
 let womenTopWear = [
     {
         brand: "BOSSINI",
@@ -186,12 +189,13 @@ let womenEthnicWear = [
     }
 ];
 
-let Bags = [
+let womenBags = [
     {
         brand: "LAVIE",
         category: "handheld bag",
         price: "1990",
         discount: "50",
+        sizes: ['s','m','l'],
         color: ['brown', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009317906-1000009317905_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009317906-1000009317905_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009317906-1000009317905_04-2100.jpg']
     },
@@ -200,6 +204,7 @@ let Bags = [
         category: "handheld bag",
         price: "1690",
         discount: "40",
+        sizes: ['s','m','l'],
         color: ['brown', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009916513-1000009916508_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009916513-1000009916508_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009916513-1000009916508_05-2100.jpg']
     },
@@ -208,6 +213,7 @@ let Bags = [
         category: "clutch",
         price: "799",
         discount: "5",
+        sizes: ['s','m','l'],
         color: ['pink', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007179594-1000007179591-27219_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007179594-1000007179591-27219_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007179594-1000007179591-27219_06-2100.jpg']
     },
@@ -216,6 +222,7 @@ let Bags = [
         category: "clutch",
         price: "1699",
         discount: "10",
+        sizes: ['s','m','l'],
         color: ['pink', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008457264-1000008457263_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008457264-1000008457263_03-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008457264-1000008457263_05-2100.jpg']
     },
@@ -224,6 +231,7 @@ let Bags = [
         category: "clutch",
         price: "1399",
         discount: "10",
+        sizes: ['s','m','l'],
         color: ['pink', 'black', 'white'],
         img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009785542-1000009785541_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009785544-1000009785541_01-2100.jpg', 'https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009785544-1000009785541_03-2100.jpg']
     }
@@ -231,7 +239,7 @@ let Bags = [
 let kidsGirls = [
     {
         brand: "FAME FOREVER KIDS",
-        cataegory: "Top",
+        category: "Top",
         price: "320",
         discount: "60",
         fitting: "Regular Fit",
@@ -241,7 +249,7 @@ let kidsGirls = [
     },
     {
         brand: "JUNIORS Girls Solid",
-        cataegory: "Pants",
+        category: "Pants",
         price: "400",
         discount: "50",
         fitting: "Regular Fit",
@@ -251,7 +259,7 @@ let kidsGirls = [
     },
     {
         brand: "FAME FOREVER KIDS Girls",
-        cataegory: "Frok",
+        category: "Frok",
         price: "700",
         discount: "50",
         fitting: "Regular Fit",
@@ -261,7 +269,7 @@ let kidsGirls = [
     },
     {
         brand: "FAME FOREVER YOUNG Girls",
-        cataegory: " Sleeves T-shirt",
+        category: " Sleeves T-shirt",
         price: "300",
         discount: "50",
         fitting: "Regular Fit",
@@ -326,7 +334,7 @@ let mensTopwear = [
     {
         brand: "LOUIS PHILIPPE",
         category: "Casual Shirt",
-        price: "2,799",
+        price: "2799",
         discount: "30",
         fitting: "Regular Fit",
         color: ['white', 'red', 'green'],
@@ -346,7 +354,7 @@ let mensTopwear = [
     {
         brand: "POLO",
         category: "T-shirt",
-        price: "1,199",
+        price: "1199",
         discount: "40",
         fitting: "Regular Fit",
         color: ['orange', 'red', 'green'],
@@ -359,7 +367,7 @@ let menBottomwear = [
     {
         brand: "WRANGLER",
         category: "Jeans",
-        price: "2,096",
+        price: "2096",
         discount: "30",
         fitting: "Regular Fit",
         color: ['white', 'red', 'green'],
@@ -369,7 +377,7 @@ let menBottomwear = [
     {
         brand: "LOUIS PHILIPPE ",
         category: "Trousers",
-        price: "1,799",
+        price: "1799",
         discount: "10",
         fitting: "Regular Fit",
         color: ['blue', 'red', 'green'],
@@ -379,7 +387,7 @@ let menBottomwear = [
     {
         brand: "CODE",
         category: "Trousers",
-        price: "1,104",
+        price: "1104",
         discount: "15",
         fitting: "Regular Fit",
         color: ['yellow', 'red', 'green'],
@@ -421,7 +429,7 @@ let menActivewear = [
     {
         brand: "PUMA",
         category: "Track Pants",
-        price: "2,499",
+        price: "2499",
         discount: "20",
         fitting: "Regular Fit",
         color: ['blue', 'red', 'green'],
@@ -528,6 +536,49 @@ let Shoes = [
     }
 ];
 
+let WomenBottoms=[
+    {
+        brand: "GINGER",
+        category: " Cropped Jeans",
+        price: "699",
+        discount: "40",
+        fitting: " Slim Fit",
+        color: ['Black', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008525354-Var7-Black-BLACK-1000008525354-Var7_01-2100.jpg']
+    },
+    {
+        brand: "GINGER",
+        category: "Jeans",
+        price: "899",
+        discount: "40",
+        fitting: "Straight Fit",
+        color: ['white', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008207391-var7-White-1000008207391-var7_01-2100.jpg']
+    },
+    {
+        brand: "GINGER",
+        category: "Jeans",
+        price: "449",
+        discount: "80",
+        fitting: "Regular Fit",
+        color: ['orange', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008415750-Orange-RUST-1000008415750_01-2100.jpg']
+    },
+    {
+        brand: "CODE",
+        category: "Trousers",
+        price: "1049",
+        discount: "80",
+        fitting: "Regular Fit",
+        color: ['red', 'red', 'green'],
+        sizes: ['s', 'm', 'l'],
+        img: ['https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009712694-Red-Wine-1000009712694_01-2100.jpg']
+    },
+];
+
 
 if(localStorage.getItem('basket') === null){
     localStorage.setItem('basket', JSON.stringify([]));
@@ -618,23 +669,34 @@ function showProducts(data) {
     });    
 }
 
+
+//adding event listeners to basket
+let productBasket = document.getElementById('basket');
+productBasket.addEventListener('click', function(){
+    window.location.href = 'basket.html';
+});
+
+
+
 function storeInObject(selectedColor, selectedSize, item, buttonClicked){
-    // console.log(selectedColor);
+    console.log(selectedColor);
     // console.log(selectedSize);
     // console.log(selectedColor, selectedSize, item.brand);
+   
 
-    let product = {
-        brand: item.brand,
-        category: item.category,
-        color: selectedColor,
-        discount: item.discount,
-        fitting: item.fitting,
-        img: item.img,
-        price: item.price,
-        size: selectedSize
-    }
+    if(selectedSize != '' && selectedColor != '' && buttonClicked){
 
-    if(selectedSize != undefined && selectedColor != undefined && buttonClicked){
+        let product = {
+            brand: item.brand,
+            category: item.category,
+            color: selectedColor,
+            discount: item.discount,
+            fitting: item.fitting,
+            img: item.img,
+            price: item.price,
+            size: selectedSize
+        }
+
         let basket = JSON.parse(localStorage.getItem('basket'));
         basket.push(product);
         localStorage.setItem('basket',JSON.stringify(basket));
@@ -644,32 +706,341 @@ function storeInObject(selectedColor, selectedSize, item, buttonClicked){
 let variables = JSON.parse(localStorage.getItem('variables'));
 var subCategory = variables[variables.length-1];
 subCategory = subCategory.toLowerCase();
-// console.log(subCategory);
+console.log(subCategory);
 
 if(subCategory == 'tops'){
     showProducts(womenTopWear);
 }else if(subCategory == 'ethnicwear'){
     showProducts(womenEthnicWear);
-}else if(subCategory == 'ethnicwear'){
-    showProducts(womenTopWear);
 }else if(subCategory == 'bottoms'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'dresses & jumpsuits'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'lingerie & nightwear'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'sportswear'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'wfh edit'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'beauty'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'watches'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'sunglases'){
-    showProducts(womenTopWear);
-}else if(subCategory == 'footwear & bags'){
-    showProducts(womenTopWear);
+    showProducts(WomenBottoms);
+}else if(subCategory == 'topwear'){
+    showProducts(mensTopwear);
+}else if(subCategory == 'bottomwear'){
+    showProducts(menBottomwear);
+}else if(subCategory == 'activewear'){
+    showProducts(menActivewear);
+}else if(subCategory == 'girls clothing'){
+    showProducts(kidsGirls);
+}else if(subCategory == 'boys clothing'){
+    showProducts(kidsBoys);
+}else if(subCategory == 'men'){
+    showProducts(Shoes);
+}else if(subCategory == 'women'){
+    showProducts(womenBags);
+}else if(subCategory == 'boys'){
+    showProducts(Shoes);
 }
 
 localStorage.setItem('variables', JSON.stringify(variables));
+
+
+
+let sortingPanel = document.getElementById('sortingPanel');
+let priceWiseSorting = document.createElement('select');
+
+let defaultOption = document.createElement('option');
+    defaultOption.innerText = 'Price';
+let highToLow = document.createElement('option');    
+    highToLow.innerText = 'High to Low';   
+
+let lowToHigh = document.createElement('option');
+    lowToHigh.innerText = 'Low to High';
+    priceWiseSorting.append(defaultOption, highToLow, lowToHigh);
+
+    priceWiseSorting.addEventListener('change', function(event){
+        // console.log('xxxxcccc');
+        sortData(event.target.value);
+    });
+
+let brandWiseSorting = document.createElement('select');
+let defaultOptionDiscount = document.createElement('option');
+    defaultOptionDiscount.innerText = 'Discount';
+let highToLowDiscount = document.createElement('option');
+    highToLowDiscount.innerText = 'Max Discount';
+let lowToHighDiscount = document.createElement('option');
+    lowToHighDiscount.innerText = 'Low Discount';
+    brandWiseSorting.append(defaultOptionDiscount, highToLowDiscount, lowToHighDiscount);
+
+    brandWiseSorting.addEventListener('change', function(event){
+        // console.log('xxxxcccc');
+        sortData(event.target.value);
+    });
+
+sortingPanel.append(priceWiseSorting, brandWiseSorting);
+
+
+
+
+// let variables = JSON.parse(localStorage.getItem('variables'));
+
+function sortData(string){ 
+    // console.log('ggggg');
+    if(variables[variables.length-1].toLowerCase() == 'tops'){
+        // console.log(string == 'Max Discount');
+        if(string == 'High to Low'){
+            let sortedHighToLow = womenTopWear.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = womenTopWear.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = womenTopWear.sort(function(item1, item2){
+                console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = womenTopWear.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'ethnicwear'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = womenEthnicWear.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = womenEthnicWear.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = womenEthnicWear.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = womenEthnicWear.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'bottoms'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = WomenBottoms.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = WomenBottoms.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = WomenBottoms.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = WomenBottoms.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'topwear'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = mensTopwear.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = mensTopwear.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = mensTopwear.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = mensTopwear.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'bottomwear'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = menBottomwear.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = menBottomwear.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = menBottomwear.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = menBottomwear.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'activewear'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = menActivewear.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = menActivewear.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = menActivewear.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = menActivewear.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'girls clothing'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = kidsGirls.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = kidsGirls.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = kidsGirls.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = kidsGirls.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'boys clothing'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = kidsBoys.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = kidsBoys.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = kidsBoys.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = kidsBoys.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'men'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = Shoes.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = Shoes.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = Shoes.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = Shoes.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'women'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = womenBags.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = womenBags.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = womenBags.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = womenBags.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }else if(variables[variables.length-1].toLowerCase() == 'boys'){
+        if(string == 'High to Low'){
+            let sortedHighToLow = Shoes.sort(function(item1, item2){
+                return item2.price - item1.price;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low to High'){
+            let sortedLowToHigh = Shoes.sort(function(item1, item2){
+                return item1.price - item2.price;
+            });    
+            showProducts(sortedLowToHigh);
+        }else if(string == 'Max Discount'){
+            let sortedHighToLow = Shoes.sort(function(item1, item2){
+                // console.log(item1.discount);
+                return item2.discount - item1.discount;
+            });    
+            showProducts(sortedHighToLow);
+        }else if(string == 'Low Discount'){
+            let sortedLowToHigh = Shoes.sort(function(item1, item2){
+                return item1.discount - item2.discount;
+            });    
+            showProducts(sortedLowToHigh);
+        }
+    }
+
+}
+
+// console.log(ShoesBagsWomen);
+
+
+
+
+
+// localStorage.setItem('variables', JSON.stringify(variables));
+
+
+
