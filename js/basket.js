@@ -9,7 +9,7 @@ line_1.innerText = "Get 300 Off on First Purchase of Rs.1,999 and Above. Code NE
 let basket = JSON.parse(localStorage.getItem('basket'));
 
 let basketTable = document.createElement("table")
-basketTable.style.border = "1px solid black"
+// basketTable.style.border = "1px solid black";
 basketTable.style.marginTop = "20px";
 
 
@@ -90,7 +90,11 @@ basket.forEach(function (element){
 
     tableDataRow.append(tableDataImg,tableDataBrand,tableDataPrice,tableDataQuantity,tableDataTotalPrice);
 
-    basketTable.append(tableDataRow);
+    // horizontal row after every row
+    let hr = document.createElement('hr');
+
+    basketTable.append(tableDataRow, hr);
+
     basketItemsDiv.append(basketTable);    
     localStorage.setItem('basket',JSON.stringify(basket));
 });

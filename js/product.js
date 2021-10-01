@@ -679,22 +679,24 @@ productBasket.addEventListener('click', function(){
 
 
 function storeInObject(selectedColor, selectedSize, item, buttonClicked){
-    // console.log(selectedColor);
+    console.log(selectedColor);
     // console.log(selectedSize);
     // console.log(selectedColor, selectedSize, item.brand);
+   
 
-    let product = {
-        brand: item.brand,
-        category: item.category,
-        color: selectedColor,
-        discount: item.discount,
-        fitting: item.fitting,
-        img: item.img,
-        price: item.price,
-        size: selectedSize
-    }
+    if(selectedSize != '' && selectedColor != '' && buttonClicked){
 
-    if(selectedSize != undefined && selectedColor != undefined && buttonClicked){
+        let product = {
+            brand: item.brand,
+            category: item.category,
+            color: selectedColor,
+            discount: item.discount,
+            fitting: item.fitting,
+            img: item.img,
+            price: item.price,
+            size: selectedSize
+        }
+
         let basket = JSON.parse(localStorage.getItem('basket'));
         basket.push(product);
         localStorage.setItem('basket',JSON.stringify(basket));
