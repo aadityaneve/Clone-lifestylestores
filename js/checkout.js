@@ -18,8 +18,9 @@ basket.forEach(function (element) {
     brand.innerText = element.brand;
 
     let details = document.createElement('h4');
-
-    let price = document.createElement('h5');
+    details.innerText = element.category;
+    
+    let price = document.createElement('h4');
     price.innerText = "₹ " + element.price;
     let hr = document.createElement('hr');
     imgDiv.append(img);
