@@ -2,8 +2,6 @@ let basket = JSON.parse(localStorage.getItem('basket'));
 
 let checkoutProductDiv = document.getElementById('checkoutProductDiv');
 let checkoutProductsDiv = document.getElementById('checkoutProductsDiv');
-// let checkoutProductDivImg = document.getElementById('checkoutProductDivImg');
-// let checkoutProductDivDetails = document.getElementById('checkoutProductDivDetails');
 let checkoutSubtotalDiv = document.getElementById('checkoutSubtotalDiv');
 
 
