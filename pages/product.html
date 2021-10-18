@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/basket.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Product display</title>
+    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
-
 <body onLoad="displayUserNameOnNav()">
-
-
+    <!-- topbar part -->
     <div id="topBar">
         <div>
             <a href="">
@@ -58,11 +54,11 @@
         </div>
     </div>
 
-
+        <!-- Navbar part -->
     <div>
         <div style="background-color: #F7F8F7;">
             <nav id="navbar" class="icon-text-middle sticky">
-                <a href="index.html" style="width: 10%;">
+                <a href="../pages/index.html" style="width: 10%;">
                     <span class="icon-text-middle">
                         <h1><span>lifestyle</span></h1>
                     </span>
@@ -92,7 +88,7 @@
                     <input class="search-bar" type="text" placeholder="What are you lookin for?">
                 </span>
 
-                <a href="signup-or-signin-mob.html" id="signUpSignin" style="width: 15%;">
+                <a href="../pages/signup-or-signin-mob.html" id="signUpSignin" style="width: 15%;">
                     <span class="icon-text-middle">
                         <h4><span>Sign Up - Sign In</span></h4>
                     </span>
@@ -111,15 +107,31 @@
     </div>
 
 
+    <div id="outerPartSortingPanel">
+        <div id="sortingPanel"></div>
+    </div>    
 
-    <div id="topHeading">
-        <h1>Your Shopping Basket</h1>
-        <h4><span id="offer1">Get the offer</span> Get 300 Off on First Purchase of Rs.1,999 and Above. Code NEW300 | Shop for Rs. 2,999 & Get 15% Off. Code SHOP15</h4>
+    <div id="displayProductDiv"></div>
+
+
+
+
+    <!-- footer part  -->
+    <div class="subscribeAndDownload">
+        <div class="subscribe">
+            <h1>Subscribe to our awesome emails.</h1>
+            <h4>Get our latest offers and news straight in your inbox.</h4>
+            <input type="text" placeholder="Please enter an email address"><button>Subscribe</button>
+        </div>
+        <div class="download">
+            <h1>Download our apps</h1>
+            <h4>Shop our products and offers on-the-go.</h4>
+            <img src="https://www.nicepng.com/png/full/235-2356693_-appstore-apple-app-store-download-png.png" alt="">
+            <img src="https://en.logodownload.org/wp-content/uploads/2019/06/get-it-on-google-play-badge-1024x304.png"
+                alt="">
+        </div>
     </div>
-    <div id="container">
-        <div id="basketItems"></div>
-        <div id="checkoutPanel"></div>
-    </div>
+    <hr>
 
 
     <footer>
@@ -220,8 +232,13 @@
 
 
 
-    <script src="./js/index.js"></script>
-    <script src="./js/basket.js"></script>
+
+
+
+
+
+    <script src="../scripts/product.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
