@@ -3,7 +3,6 @@ let basket = JSON.parse(localStorage.getItem('basket'));
 let checkoutProductDiv = document.getElementById('checkoutProductDiv');
 let checkoutProductDivImg = document.getElementById('checkoutProductDivImg');
 let checkoutProductDivDetails = document.getElementById('checkoutProductDivDetails');
-// let checkoutQuantityAndPrice = document.getElementById('checkoutQuantityAndPrice');
 let checkoutSubtotalDiv = document.getElementById('checkoutSubtotalDiv');
 
 
@@ -17,18 +16,12 @@ basket.forEach( function (element) {
         brand.innerText = element.brand;
 
     let details = document.createElement('h4');
-        details.innerText = element.category;
-
-    // let quantity = document.createElement('h5');
-    //     quantity.innerText = '';
 
     let price = document.createElement('h5');
         price.innerText = "₹ " +element.price;
 
     checkoutProductDivImg.append(img);
     checkoutProductDivDetails.append(brand, details, price);
-    // checkoutQuantityAndPrice.append(quantity, price)
-
 });
 
 let totalAmount = 0;
@@ -49,10 +42,7 @@ let checkoutTotal = document.createElement('h3');
 // pay now button direct to success.html
 let payNowBtn = document.getElementById('payNow');
     payNowBtn.addEventListener('click', function (){
-        // let basket = JSON.parse(localStorage.getItem('basket'));
-        // window.localStorage.clear();
         localStorage.removeItem("basket");
-        // localStorage.setItem('basket',JSON.stringify(basket));
         window.location.href = 'success.html';
     });
 

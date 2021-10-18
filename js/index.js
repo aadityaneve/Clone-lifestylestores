@@ -133,7 +133,6 @@ function displayUserNameOnNav() {
     let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
     let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length)-1].email;
     let userName = "";
-    // console.log((userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length);
     for(let i=0;i<(userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length;i++){
         console.log('ttt');
         if(userEmail[i] == '@'){
@@ -145,8 +144,6 @@ function displayUserNameOnNav() {
     }
 
     if(isSignedIn[isSignedIn.length-1] == true){
-        // console.log(userLoginDetails[(Object.keys(userLoginDetails).length)-1]);
-        // userLoginDetails[(Object.keys(userLoginDetails).length)-1].email
         signUpSignin.innerHTML = '<strong>'+userName+'</strong>'   
     }
     signUpSignin.setAttribute('style','text-aligh: center; margin-left: 7%; margin-right: 7%;');
