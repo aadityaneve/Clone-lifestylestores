@@ -21,10 +21,14 @@ hr {
     width: 80%;
 }
 
+#checkoutContainer>div:nth-child(2) {
+    margin-top: 30%;
+}
+
 #homeDeliveryAndClickCollect {
+    width: 80%;
     display: flex;
     gap: 4%;
-    padding: 3%;
     text-align: center;
 }
 
@@ -79,28 +83,23 @@ footer {
     text-align: center;
 }
 
-#checkoutProductDiv {
-    display: grid;
-    grid-template-columns: 30% 70%;
+#checkoutProductDiv {}
 
+#checkoutProductDiv h4, #checkoutProductDiv h5 {
+    font-weight: 600;
+    font-size: 70%;
 }
 
-#checkoutProductDiv h4,
-#checkoutProductDiv h5 {
-    font-weight: 400;
-    font-size: 50%;
+#checkoutProductsDiv img {
+    width: 7vw;
+    height: 100%;
 }
 
-#checkoutProductDivImg img {
-    width: 60%;
+#checkoutProductsDiv>div {
+    display: flex;
+    padding: 1%;
 }
 
-#checkoutProductDivDetails {
-    margin: 0%;
-    width: 50%;
-}
-
-#checkoutProductDivDetails h4,
-#checkoutProductDivDetails h5 {
-    /* margin: 5%; */
+#checkoutProductsDiv>div>div {
+    margin-right: 2%;
 }
