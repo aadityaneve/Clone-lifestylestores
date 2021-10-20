@@ -10,14 +10,12 @@ signinBtn.addEventListener('click', function (e) {
     let signinEmail = document.getElementById('signinEmail').value;
     let signinPassword = document.getElementById('signinPassword').value;
 
-    // console.log(signinEmail, signinPassword);
     let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
 
     userLoginDetails.forEach(function (user) {
         if(signinEmail == user.email && signinPassword == user.password){
             flag = 1;
             signedIn = true;
-            // console.log(signedIn);
         }
     });
 

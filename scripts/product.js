@@ -1,8 +1,5 @@
 
 
-
-
-// daya data
 let womenTopWear = [
     {
         brand: "BOSSINI",
@@ -623,7 +620,6 @@ function showProducts(data) {
         
         // passing selected color
         colors.addEventListener('change',function(e){            
-            // console.log(e.target.value);
             selectedColor = e.target.value;
             storeInObject(selectedColor, selectedSize)   ;
         });
@@ -642,7 +638,6 @@ function showProducts(data) {
 
         // passing selected size
         sizes.addEventListener('change',function(e){            
-          // console.log(e.target.value);
           selectedSize = e.target.value;
           storeInObject(selectedColor, selectedSize, item);
         });
@@ -691,10 +686,7 @@ productBasket.addEventListener('click', function(){
 
 
 function storeInObject(selectedColor, selectedSize, item, buttonClicked){
-    console.log(selectedColor);
-    // console.log(selectedSize);
-    // console.log(selectedColor, selectedSize, item.brand);
-   
+    console.log(selectedColor);   
 
     if(selectedSize != '' && selectedColor != '' && buttonClicked){
 
@@ -761,7 +753,6 @@ let lowToHigh = document.createElement('option');
     priceWiseSorting.append(defaultOption, highToLow, lowToHigh);
 
     priceWiseSorting.addEventListener('change', function(event){
-        // console.log('xxxxcccc');
         sortData(event.target.value);
     });
 
@@ -775,7 +766,6 @@ let lowToHighDiscount = document.createElement('option');
     brandWiseSorting.append(defaultOptionDiscount, highToLowDiscount, lowToHighDiscount);
 
     brandWiseSorting.addEventListener('change', function(event){
-        // console.log('xxxxcccc');
         sortData(event.target.value);
     });
 
@@ -784,12 +774,9 @@ sortingPanel.append(priceWiseSorting, brandWiseSorting);
 
 
 
-// let variables = JSON.parse(localStorage.getItem('variables'));
-
 function sortData(string){ 
-    // console.log('ggggg');
+
     if(variables[variables.length-1].toLowerCase() == 'tops'){
-        // console.log(string == 'Max Discount');
         if(string == 'High to Low'){
             let sortedHighToLow = womenTopWear.sort(function(item1, item2){
                 return item2.price - item1.price;
@@ -825,7 +812,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = womenEthnicWear.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -848,7 +834,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = WomenBottoms.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -871,7 +856,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = mensTopwear.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -894,7 +878,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = menBottomwear.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -917,7 +900,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = menActivewear.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -940,7 +922,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = kidsGirls.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -963,7 +944,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = kidsBoys.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -986,7 +966,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = Shoes.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -1009,7 +988,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = womenBags.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -1032,7 +1010,6 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = Shoes.sort(function(item1, item2){
-                // console.log(item1.discount);
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -1053,7 +1030,6 @@ function displayUserNameOnNav() {
     let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
     let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length)-1].email;
     let userName = "";
-    // console.log((userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length);
     for(let i=0;i<(userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length;i++){
         console.log('ttt');
         if(userEmail[i] == '@'){
@@ -1065,8 +1041,6 @@ function displayUserNameOnNav() {
     }
 
     if(isSignedIn[isSignedIn.length-1] == true){
-        // console.log(userLoginDetails[(Object.keys(userLoginDetails).length)-1]);
-        // userLoginDetails[(Object.keys(userLoginDetails).length)-1].email
         signUpSignin.innerHTML = '<strong>'+userName+'</strong>'   
     }
     signUpSignin.setAttribute('style','text-aligh: center; margin-left: 7%; margin-right: 7%;');
