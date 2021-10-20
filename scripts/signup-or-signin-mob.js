@@ -8,7 +8,8 @@ if(localStorage.getItem('userLoginDetails') === null){
 
 let continueBtn = document.getElementById('continueBtn');
 
-continueBtn.addEventListener('click', function(){
+continueBtn.addEventListener('click', function(e){
+    e.preventDefault();
 
     let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
 
@@ -26,7 +27,11 @@ continueBtn.addEventListener('click', function(){
 
     localStorage.setItem('userLoginDetails',JSON.stringify(userLoginDetails));
 
-    window.location.href = 'signin-with-email.html';
+    if(mobileNumber != "" && email != "" && password != ""){
+        window.location.href = 'signin-with-email.html';
+    }else{
+        alert("All fields are mandatory.");
+    }
 });
 
 
