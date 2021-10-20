@@ -5,8 +5,6 @@ let checkoutProductsDiv = document.getElementById('checkoutProductsDiv');
 let checkoutSubtotalDiv = document.getElementById('checkoutSubtotalDiv');
 
 
-console.log(basket);
-
 basket.forEach(function (element) {
     let div = document.createElement('div');
     let imgDiv = document.createElement('div');

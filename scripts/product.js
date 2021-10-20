@@ -686,7 +686,6 @@ productBasket.addEventListener('click', function(){
 
 
 function storeInObject(selectedColor, selectedSize, item, buttonClicked){
-    console.log(selectedColor);   
 
     if(selectedSize != '' && selectedColor != '' && buttonClicked){
 
@@ -709,8 +708,7 @@ function storeInObject(selectedColor, selectedSize, item, buttonClicked){
 
 let variables = JSON.parse(localStorage.getItem('variables'));
 var subCategory = variables[variables.length-1];
-subCategory = subCategory.toLowerCase();
-console.log(subCategory);
+subCategory = subCategory.toLowerCase()
 
 if(subCategory == 'tops'){
     showProducts(womenTopWear);
@@ -789,7 +787,7 @@ function sortData(string){
             showProducts(sortedLowToHigh);
         }else if(string == 'Max Discount'){
             let sortedHighToLow = womenTopWear.sort(function(item1, item2){
-                console.log(item1.discount);
+        
                 return item2.discount - item1.discount;
             });    
             showProducts(sortedHighToLow);
@@ -1031,12 +1029,11 @@ function displayUserNameOnNav() {
     let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length)-1].email;
     let userName = "";
     for(let i=0;i<(userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length;i++){
-        console.log('ttt');
+
         if(userEmail[i] == '@'){
             break;
         }else{
             userName+=userEmail[i];
-            console.log(userName);
         }
     }
 

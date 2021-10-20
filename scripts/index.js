@@ -134,12 +134,10 @@ function displayUserNameOnNav() {
     let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length)-1].email;
     let userName = "";
     for(let i=0;i<(userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length;i++){
-        console.log('ttt');
         if(userEmail[i] == '@'){
             break;
         }else{
             userName+=userEmail[i];
-            console.log(userName);
         }
     }
 

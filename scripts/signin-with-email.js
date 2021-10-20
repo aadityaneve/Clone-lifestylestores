@@ -2,7 +2,6 @@
 
 let signinBtn = document.getElementById('signin');
 
-console.log(signinEmail, signinPassword);
 let flag = 0;
 let signedIn = false;
 signinBtn.addEventListener('click', function (e) {
@@ -23,7 +22,7 @@ signinBtn.addEventListener('click', function (e) {
     localStorage.setItem('userLoginDetails', JSON.stringify(userLoginDetails));
 
     let basket = JSON.parse(localStorage.getItem('basket'));
-    console.log(Object.keys(basket).length);
+
     if (flag == 1 && Object.keys(basket).length == 0) {
         window.location.href = 'index.html';
     } else if (flag == 1 && Object.keys(basket).length > 0) {
