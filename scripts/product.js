@@ -600,9 +600,19 @@ function showProducts(data) {
         brandName.append(brand);
 
         let priceDiv = document.createElement('div');
-        let price = document.createElement("h2");
+        let price = document.createElement("span");
         price.innerText = "₹ " + item.price;
-        priceDiv.append(price)
+        price.style.fontSize="15px"
+        price.style.fontWeight="700"
+        // priceDiv.append(price)
+
+        // added discount tag
+        let discount=document.createElement('span');
+        discount.innerText=item.discount+"% OFF";
+        discount.style.marginLeft="180px"
+        discount.style.fontSize="15px"
+        discount.style.fontWeight="700"
+        priceDiv.append(price,discount);
 
         let selectionDiv = document.createElement('div');
         selectionDiv.setAttribute('id', 'selectionDiv');        
@@ -768,8 +778,43 @@ let lowToHighDiscount = document.createElement('option');
     brandWiseSorting.addEventListener('change', function(event){
         sortData(event.target.value);
     });
+ 
+    // added discount range drop_down list
+let discount_wise_sorting=document.createElement('select');
+let default_option=document.createElement('option');
+default_option.innerText="Discount Range";
+let seventy=document.createElement('option');
+seventy.innerText="◯  70% and above";
+let fifty=document.createElement('option');
+fifty.innerText="◯  50% and above";
+let thirty=document.createElement('option');
+thirty.innerText="◯  30% and above";
+let less_than_thirty=document.createElement('option');
+less_than_thirty.innerText="◯  less than 30%";
+discount_wise_sorting.append(default_option,seventy,fifty,thirty,less_than_thirty);
 
-sortingPanel.append(priceWiseSorting, brandWiseSorting);
+
+
+let type_wise_sorting=document.createElement('select');
+let default_type=document.createElement('option');
+default_type.innerText="Type";
+let Crew_Neck=document.createElement('option');
+Crew_Neck.innerText="⬜ Crew Neck";
+let Polo_Neck=document.createElement('option');
+Polo_Neck.innerText="⬜  Polo Neck";
+let Denim=document.createElement('option');
+Denim.innerText="⬜  Denim";
+let Hooded=document.createElement('option');
+Hooded.innerText="⬜  Hooded";
+type_wise_sorting.append(default_type,Crew_Neck,Polo_Neck,Denim,Hooded);
+
+
+
+
+
+
+
+sortingPanel.append(priceWiseSorting, brandWiseSorting, discount_wise_sorting,type_wise_sorting);
 
 
 
