@@ -178,6 +178,10 @@ hr {
     gap: 1%;
 }
 
+.squareAddsImages img {
+    cursor: pointer;
+}
+
 .smallSquareAdds {
     margin: auto;
     padding: 3%;
@@ -236,6 +240,8 @@ hr {
 .circleAddsImages img {
     width: 100%;
     height: auto;
+
+    cursor: pointer;
 }
 
 .circleAddsImages h4 {

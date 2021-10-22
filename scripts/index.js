@@ -1,6 +1,6 @@
 
 
-if(localStorage.getItem('variables') === null){
+if (localStorage.getItem('variables') === null) {
     localStorage.setItem('variables', JSON.stringify([]));
 }
 
@@ -15,7 +15,7 @@ let categories = document.getElementById('categories');
 
 let womenCategories = ['Tops', 'Ethnicwear', 'Bottoms', 'Dresses & Jumpsuits', 'Lingerie & Nightwear', 'Sportswear', 'WFH Edit', 'Beauty', 'Watches', 'Sunglases', 'Footwear & Bags', 'More'];;
 let menCategories = ['Topwear', 'Bottomwear', 'Activewear', 'Ethnic', 'Winterwear', 'Innerwear', 'WFH Edit', 'Watches', 'Sunglases', 'Shoes', 'Grooming', 'Add-Ons', 'More'];;
-let kidCategories = ['Girls Clothing', 'Boys Clothing', 'Infant Girl', 'Infant Boy', 'Winterwear', 'Boys Shoes', 'Girsl Shoes', '0-03 Yrs', 'Add Ons', 'Character Shop', 'More'];
+let kidCategories = ['Girls Clothing', 'Boys Clothing', 'Infant Girl', 'Infant Boy', 'Winterwear', 'Boys Shoes', 'Girls Shoes', '0-03 Yrs', 'Add Ons', 'Character Shop', 'More'];
 let shoesAndBagsCategories = ['Women', 'Men', 'Boys', 'Girls', 'Women Accessories', 'Men Accessories', 'Essential', 'Price Store', 'More'];
 
 function showCategoriesOnLoad() {
@@ -39,7 +39,7 @@ women.onmouseenter = function () {
         h5.addEventListener('click', function () {
             let variables = JSON.parse(localStorage.getItem('variables'));
             variables.push(h5.innerText);
-            localStorage.setItem('variables',JSON.stringify(variables));
+            localStorage.setItem('variables', JSON.stringify(variables));
             window.location.href = '../pages/product.html';
         });
         categories.append(h5);
@@ -60,7 +60,7 @@ men.onmouseenter = function () {
         h5.addEventListener('click', function () {
             let variables = JSON.parse(localStorage.getItem('variables'));
             variables.push(h5.innerText);
-            localStorage.setItem('variables',JSON.stringify(variables));
+            localStorage.setItem('variables', JSON.stringify(variables));
             window.location.href = '../pages/product.html';
         });
         categories.append(h5);
@@ -82,7 +82,7 @@ kids.onmouseenter = function () {
         h5.addEventListener('click', function () {
             let variables = JSON.parse(localStorage.getItem('variables'));
             variables.push(h5.innerText);
-            localStorage.setItem('variables',JSON.stringify(variables));
+            localStorage.setItem('variables', JSON.stringify(variables));
             window.location.href = '../pages/product.html';
         });
         categories.append(h5);
@@ -104,7 +104,7 @@ shoesAndBags.onmouseenter = function () {
         h5.addEventListener('click', function () {
             let variables = JSON.parse(localStorage.getItem('variables'));
             variables.push(h5.innerText);
-            localStorage.setItem('variables',JSON.stringify(variables));
+            localStorage.setItem('variables', JSON.stringify(variables));
             window.location.href = '../pages/product.html';
         });
         categories.append(h5);
@@ -122,8 +122,8 @@ signUpSignin.onmouseleave = function () {
     signUpSignin.style.color = 'black';
 }
 
-signUpSignin.addEventListener('click', function (){
-    
+signUpSignin.addEventListener('click', function () {
+
 });
 
 
@@ -131,29 +131,29 @@ function displayUserNameOnNav() {
     // navbar user printing if user is signed in 
     let isSignedIn = JSON.parse(localStorage.getItem('isSignedIn'));
     let userLoginDetails = JSON.parse(localStorage.getItem('userLoginDetails'));
-    let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length)-1].email;
+    let userEmail = userLoginDetails[(Object.keys(userLoginDetails).length) - 1].email;
     let userName = "";
-    for(let i=0;i<(userLoginDetails[(Object.keys(userLoginDetails).length)-1].email).length;i++){
-        if(userEmail[i] == '@'){
+    for (let i = 0; i < (userLoginDetails[(Object.keys(userLoginDetails).length) - 1].email).length; i++) {
+        if (userEmail[i] == '@') {
             break;
-        }else{
-            userName+=userEmail[i];
+        } else {
+            userName += userEmail[i];
         }
     }
 
-    if(isSignedIn[isSignedIn.length-1] == true){
-        signUpSignin.innerHTML = '<strong>'+userName+'</strong>'   
+    if (isSignedIn[isSignedIn.length - 1] == true) {
+        signUpSignin.innerHTML = '<strong>' + userName + '</strong>'
     }
-    signUpSignin.setAttribute('style','text-aligh: center; margin-left: 7%; margin-right: 7%;');
-    localStorage.setItem('isSignedIn',JSON.stringify(isSignedIn));
-    localStorage.setItem('userLoginDetails',JSON.stringify(userLoginDetails));
+    signUpSignin.setAttribute('style', 'text-aligh: center; margin-left: 7%; margin-right: 7%;');
+    localStorage.setItem('isSignedIn', JSON.stringify(isSignedIn));
+    localStorage.setItem('userLoginDetails', JSON.stringify(userLoginDetails));
 }
 
 
 
 //adding event listeners to basket
 let indexBasket = document.getElementById('basket');
-indexBasket.addEventListener('click', function(){
+indexBasket.addEventListener('click', function () {
     window.location.href = 'basket.html';
 });
 
@@ -191,3 +191,71 @@ setInterval(function () {
     showCarousel();
 }, 5000);
 
+
+
+// Square Adds
+document.getElementById('topsAndTees').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Tops');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('dresses').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('kurtas').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+
+// Circle Adds
+document.getElementById('circleImgTopsAndTees').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Tops');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgEthnicwear').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgBottoms').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Bottoms');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgHandbags').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Women');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgFootwear').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Men');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgDresses').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
