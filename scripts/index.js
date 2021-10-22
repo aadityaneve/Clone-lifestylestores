@@ -15,7 +15,7 @@ let categories = document.getElementById('categories');
 
 let womenCategories = ['Tops', 'Ethnicwear', 'Bottoms', 'Dresses & Jumpsuits', 'Lingerie & Nightwear', 'Sportswear', 'WFH Edit', 'Beauty', 'Watches', 'Sunglases', 'Footwear & Bags', 'More'];;
 let menCategories = ['Topwear', 'Bottomwear', 'Activewear', 'Ethnic', 'Winterwear', 'Innerwear', 'WFH Edit', 'Watches', 'Sunglases', 'Shoes', 'Grooming', 'Add-Ons', 'More'];;
-let kidCategories = ['Girls Clothing', 'Boys Clothing', 'Infant Girl', 'Infant Boy', 'Winterwear', 'Boys Shoes', 'Girsl Shoes', '0-03 Yrs', 'Add Ons', 'Character Shop', 'More'];
+let kidCategories = ['Girls Clothing', 'Boys Clothing', 'Infant Girl', 'Infant Boy', 'Winterwear', 'Boys Shoes', 'Girls Shoes', '0-03 Yrs', 'Add Ons', 'Character Shop', 'More'];
 let shoesAndBagsCategories = ['Women', 'Men', 'Boys', 'Girls', 'Women Accessories', 'Men Accessories', 'Essential', 'Price Store', 'More'];
 
 function showCategoriesOnLoad() {
