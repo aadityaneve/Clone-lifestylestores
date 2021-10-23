@@ -40,8 +40,8 @@ For storing user data we also used localStorage.
 ![Success page](https://github.com/aadityaneve/Clone-lifestylestores/blob/main/screenshots/6-success-page.png?raw=true)
 
 ## How to run the Project
-1. Open pages directory.
-2. Open index.html
+* Open pages directory.
+* Open index.html using live server.
 
 ## End Notes 📑
 In this project we were tried to achieve a near to perfect clone of the original website as much as possible. This entire journey of this construct week has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence. Most of the features are added and functionality of the website is achieved.
