@@ -35,8 +35,7 @@ body {
 #basketItems select {
     border: 1px solid #ECEDEB;
     padding: 3%;
-
-    width: 100%;
+ width: 100%;
 
 }
 
@@ -84,4 +83,7 @@ hr {
     /* border-color: white; */
     width: 80%;
     border-radius: 3%;
+}
+#tableDataBrand>h2,h4{
+    margin-left: 10px;
 }

@@ -53,6 +53,7 @@ basket.forEach(function (element){
         tableDataImg.append(img);
 
     let tableDataBrand = document.createElement('td');
+     tableDataBrand.setAttribute('id','tableDataBrand')
     let brand = document.createElement('h2');
         brand.innerText = element.brand +" "+ element.category;
         let colorH4 = document.createElement('h4');
