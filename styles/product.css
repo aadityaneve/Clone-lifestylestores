@@ -3,7 +3,7 @@ body {
     background-color: #FFFFFF;
 }
 
-body h2{
+body h2 {
     font-size: 1.2em;
 }
 
@@ -13,23 +13,17 @@ body h3 {
 }
 
 #displayProductDiv {
-    margin: auto;    
-
+    margin: auto;
     display: grid;
     grid-template-columns: 19vw 19vw 19vw 19vw;
-
     gap: 1.5%;
     padding: 3%;
-
     width: 80%;
 }
 
-#displayProductDiv > div {
+#displayProductDiv>div {
     box-sizing: border-box;
-    /* border: 1px solid blue; */
-
     padding: 1%;
-
     width: 100%;
     height: auto;
 }
@@ -39,36 +33,38 @@ img {
     height: 60%;
 }
 
+#discountTag {
+    background-color: white;
+    display: inline-flex;
+
+    padding: 0.3em;
+    font-weight: 900;
+    font-size: 1vw;
+    border-radius: 4%;
+
+    position: absolute;
+    z-index: 1;
+    
+    margin-left: 0.3%;
+    margin-top: 0.3%;
+}
+
 #selectionDiv {
     margin-left: 0%;
     margin-right: 0%;
-
     /* border: 1px solid green; */
-
     width: 97%;
-
     display: grid;
     grid-template-columns: auto auto;
-
     column-gap: 1%;
     padding: 2%;
 }
 
-/* button{
-    margin: auto;
-    background-color: yellow;
-} */
-
 #colorsOption, #sizesOption {
-    /* margin-left: 0;
-    margin-right: 0; */
     margin: auto;
-
     font-size: 1em;
     border-radius: 2%;
-
     border: 1px solid lightgrey;
-
     width: 100%;
     height: 3em;
 }
@@ -76,16 +72,11 @@ img {
 #addToCartBtn {
     margin: auto;
     border: none;
-    /* border: 1px solid black; */
-
     width: 100%;
     height: auto;
-
     cursor: pointer;
-
     padding: 7%;
     border-radius: 2%;
-    
     background-color: #FAA81E;
     color: white;
 }

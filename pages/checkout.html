@@ -20,7 +20,7 @@
     </div>
 
     <div id="checkoutContainer">
-        <div>
+        <form id="checkoutForm">
             <h1>Select a shipping method</h1>
             <div id="homeDeliveryAndClickCollect">
                 <div id="homeDeliveryBtn">Home Delivery</div>
@@ -28,62 +28,62 @@
             </div>
             <h2>Add your shipping address</h2>
             <h3>Full Name</h3>
-            <input class="textBoxInputWidth" type="text" name="name" placeholder="Enter your full name" required>
+            <input id="fullName" class="textBoxInputWidth" type="text" name="name" placeholder="Enter your full name" required>
 
             <h3>Mobile Number</h3>
-            <input class="textBoxInputWidth" type="tel" name="mob" placeholder="Enter your mobile number" required>
+            <input id="mobileNumber" class="textBoxInputWidth" type="tel" name="mob" placeholder="Enter your mobile number" required>
 
             <h3>Pincode</h3>
-            <input class="textBoxInputWidth" type="text" name="Pincode" placeholder="Enter your Pincode" required>
+            <input id="pincode" class="textBoxInputWidth" type="text" name="Pincode" placeholder="Enter your Pincode" required>
 
             <h3>City</h3>
-            <input class="textBoxInputWidth" type="text" name="City" placeholder="Select your City or Town" required>
+            <input id="city" class="textBoxInputWidth" type="text" name="City" placeholder="Select your City or Town" required>
 
             <h3>State</h3>
-            <input class="textBoxInputWidth" type="text" name="state" placeholder="Enter Building Name" required>
+            <input id="state" class="textBoxInputWidth" type="text" name="state" placeholder="Enter your state" required>
 
             <h3>Building name or number</h3>
-            <input class="textBoxInputWidth" type="text" name="flat" placeholder="Enter Building Name" required>
+            <input id="buildingName" class="textBoxInputWidth" type="text" name="building" placeholder="Enter Building Name" required>
 
             <h3>Street name or number</h3>
-            <input class="textBoxInputWidth" type="text" name="street" placeholder="Flat/House number, Floor, Building" required>
+            <input id="street" class="textBoxInputWidth" type="text" name="street" placeholder="Flat/House number, Floor, Building" required>
 
             <h3>Landmark</h3>
-            <input class="textBoxInputWidth" type="text" name="street" placeholder="Landmark" required>
+            <input id="landmark" class="textBoxInputWidth" type="text" name="landmark" placeholder="Landmark" required>
 
             <h3>Address Type</h3>
             <div id="checkoutAddressType">
-                <input type="radio" name="add"><span>Home</span></input>
-                <input type="radio" name="add"><span>Office</span></input>
+                <input id="" type="radio" name="add" checked><span>Home</span></input>
+                <input id="" type="radio" name="add"><span>Office</span></input>
             </div>
             <hr>
 
             <h1>Select a payment method</h1>
             <div>
-                <input class="" name="card" type="radio"><span>Credit Card</span>
-                <input class="" name="card" type="radio"><span>Debit Card</span>
+                <input id="" class="" name="card" type="radio" checked><span>Credit Card</span>
+                <input id="" class="" name="card" type="radio"><span>Debit Card</span>
             </div>
             <h3>Card Number</h3>
-            <input class="textBoxInputWidth" type="text" name="card" placeholder="Enter your 16 digit card number" required>
+            <input id="cardNumber" class="textBoxInputWidth" type="text" name="card" placeholder="Enter your 16 digit card number" required>
 
             <h3>Name on Card</h3>
-            <input class="textBoxInputWidth" type="text" name="name" placeholder="Name on card" required>
+            <input id="nameOnCard" class="textBoxInputWidth" type="text" name="name" placeholder="Name on card" required>
 
             <h3>Expiry Date</h3>
-            <input type="month" name="month" placeholder="dd-mm-yyyy">
+            <input id="expiryDate" type="month" name="month" placeholder="dd-mm-yyyy" required>
 
             <div>
-                <input type="checkbox"><span>Save this card for a faster checkout experience</span>
+                <input id="" type="checkbox"><span>Save this card for a faster checkout experience</span>
             </div>
 
             <h3>Biling Address</h3>
             <div>
-                <input type="checkbox"><span>Is billing address the same as shipping address?</span>
+                <input id="" type="checkbox"><span>Is billing address the same as shipping address?</span>
             </div>
 
             <div id="checkoutPayNowBtnPanel">
                 <h6>By clicking on Proceed to Payment, you agree to our Terms and Conditions</h6>
-                <button id="payNow">PAYNOW</button>
+                <button id="payNow" type="button">PAYNOW</button>
             </div>
 
             <div id="checkoutTermsAndConditions">
@@ -96,7 +96,7 @@
                 </h5>
             </div>
 
-        </div>
+        </form>
         <div>
             <div>
                 <div>Your order summary</div>
