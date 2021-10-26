@@ -3,6 +3,10 @@ body {
   background-color: #ffffff;
 }
 
+.logoOnBasket {
+    background: url("https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/Sprite_icons.svg") -95px -176px;
+}
+
 #topHeading {
   margin: auto;
   width: 80%;
