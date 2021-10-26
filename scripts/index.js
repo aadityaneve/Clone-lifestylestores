@@ -303,3 +303,28 @@ document.getElementById('circleImgSkinCare').addEventListener('click', () => {
     localStorage.setItem('variables', JSON.stringify(variables));
     window.location.href = '../pages/product.html';
 })
+
+
+
+// Square Adds
+document.getElementById('squareImgBottomWear').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Tops');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('squareImgLingerie').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('squareImgKurtas').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
