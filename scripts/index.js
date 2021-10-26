@@ -259,3 +259,47 @@ document.getElementById('circleImgDresses').addEventListener('click', () => {
     localStorage.setItem('variables', JSON.stringify(variables));
     window.location.href = '../pages/product.html';
 })
+
+
+document.getElementById('circleImgPlusSize').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Tops');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgWatches').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgEthnicWear').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Bottoms');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgLingerie').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Women');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgBeauty').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Men');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
+document.getElementById('circleImgSkinCare').addEventListener('click', () => {
+
+    let variables = JSON.parse(localStorage.getItem('variables'));
+    variables.push('Ethnicwear');
+    localStorage.setItem('variables', JSON.stringify(variables));
+    window.location.href = '../pages/product.html';
+})
