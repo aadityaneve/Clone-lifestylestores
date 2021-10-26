@@ -889,7 +889,7 @@ function showProducts(data) {
 
       let flag = 0;
       checkInBasket.forEach(({ brand, category, price, img }) => {
-        // console.log(item);
+  
         if (
             brand == item.brand &&
             category == item.category &&
