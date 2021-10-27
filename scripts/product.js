@@ -856,9 +856,6 @@ if (localStorage.getItem("basket") === null) {
 
 let displayProductDiv = document.getElementById("displayProductDiv");
 
-let selectedColor = "";
-let selectedSize = "";
-
 function showProducts(data) {
   displayProductDiv.innerHTML = null;
   data.forEach(function (item) {
@@ -896,6 +893,8 @@ function showProducts(data) {
       colors.append(colorsOption);
     }
 
+    let selectedColor = "";
+    let selectedSize = "";
     // passing selected color
     colors.addEventListener("change", function (e) {
       selectedColor = e.target.value;
@@ -928,7 +927,9 @@ function showProducts(data) {
 
     // products added text inside button
     addToCartBtn.addEventListener("click", function () {
-      addToCartBtn.innerHTML = "<strong> ✓ Added</strong>";
+      if (selectedColor != "" && selectedSize != "") {
+        addToCartBtn.innerHTML = "<strong> ✓ Added</strong>";
+      }
     });
 
     // #FAA81E - original color
