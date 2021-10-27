@@ -1,5 +1,6 @@
 let womenTopWear = [
   {
+    id: 1,
     brand: "BOSSINI",
     category: "T-shirt",
     price: "349",
@@ -15,6 +16,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 2,
     brand: "FAME FOREVER",
     category: "T-shirt",
     price: "449",
@@ -30,6 +32,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 3,
     brand: "GINGER",
     category: "Top",
     price: "449",
@@ -46,6 +49,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 4,
     brand: "LATIN QUARTERS",
     category: "T-shirt",
     price: "749",
@@ -62,6 +66,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 5,
     brand: "GINGER",
     category: "Shirt",
     price: "749",
@@ -78,6 +83,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 6,
     brand: "GINGER",
     category: "Top",
     price: "749",
@@ -94,6 +100,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 7,
     brand: "GINGER",
     category: "Top",
     price: "649",
@@ -109,6 +116,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 8,
     brand: "BOSSINI",
     category: "Top",
     price: "649",
@@ -125,6 +133,7 @@ let womenTopWear = [
     ],
   },
   {
+    id: 9,
     brand: "BOSSINI",
     category: "Top",
     price: "649",
@@ -144,6 +153,7 @@ let womenTopWear = [
 
 let womenEthnicWear = [
   {
+    id: 10,
     brand: "MELANGE",
     category: "Kurta",
     price: "899",
@@ -160,6 +170,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 11,
     brand: "MELANGE",
     category: "Kurta",
     price: "1019",
@@ -176,6 +187,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 12,
     brand: "COLOUR ME",
     category: "Tunic",
     price: "779",
@@ -192,6 +204,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 13,
     brand: "MELANGE",
     category: "Kurta",
     price: "1019",
@@ -208,6 +221,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 14,
     brand: "MELANGE",
     category: "Kurta",
     price: "1379",
@@ -224,6 +238,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 15,
     brand: "MELANGE",
     category: "Kurta",
     price: "999",
@@ -240,6 +255,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 16,
     brand: "MELANGE",
     category: "Kurta",
     price: "909",
@@ -256,6 +272,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 17,
     brand: "MELANGE",
     category: "Kurta",
     price: "909",
@@ -272,6 +289,7 @@ let womenEthnicWear = [
     ],
   },
   {
+    id: 18,
     brand: "COLOUR ME",
     category: "Kurta",
     price: "1599",
@@ -291,6 +309,7 @@ let womenEthnicWear = [
 
 let womenBags = [
   {
+    id: 19,
     brand: "LAVIE",
     category: "handheld bag",
     price: "1990",
@@ -304,6 +323,7 @@ let womenBags = [
     ],
   },
   {
+    id: 20,
     brand: "CODE",
     category: "handheld bag",
     price: "1690",
@@ -317,6 +337,7 @@ let womenBags = [
     ],
   },
   {
+    id: 21,
     brand: "CODE",
     category: "clutch",
     price: "799",
@@ -330,6 +351,7 @@ let womenBags = [
     ],
   },
   {
+    id: 22,
     brand: "CODE",
     category: "clutch",
     price: "1699",
@@ -343,6 +365,7 @@ let womenBags = [
     ],
   },
   {
+    id: 23,
     brand: "CODE",
     category: "clutch",
     price: "1399",
@@ -358,6 +381,7 @@ let womenBags = [
 ];
 let kidsGirls = [
   {
+    id: 24,
     brand: "FAME FOREVER KIDS",
     category: "Top",
     price: "320",
@@ -372,6 +396,7 @@ let kidsGirls = [
     ],
   },
   {
+    id: 25,
     brand: "JUNIORS Girls Solid",
     category: "Pants",
     price: "400",
@@ -385,6 +410,7 @@ let kidsGirls = [
     ],
   },
   {
+    id: 26,
     brand: "FAME FOREVER KIDS Girls",
     category: "Frok",
     price: "700",
@@ -399,6 +425,7 @@ let kidsGirls = [
     ],
   },
   {
+    id: 27,
     brand: "FAME FOREVER YOUNG Girls",
     category: " Sleeves T-shirt",
     price: "300",
@@ -415,6 +442,7 @@ let kidsGirls = [
 ];
 let kidsBoys = [
   {
+    id: 28,
     brand: "ADIDAS Printed Crew Neck T-shirt",
     category: "T-shirt",
     price: "900",
@@ -429,6 +457,7 @@ let kidsBoys = [
     ],
   },
   {
+    id: 29,
     brand: "BOSSINI Boys Printed Crew Neck",
     category: "T-shirt",
     price: "300",
@@ -443,6 +472,7 @@ let kidsBoys = [
     ],
   },
   {
+    id: 30,
     brand: "ADIDAS Printed Crew Neck",
     category: "T-shirt",
     price: "500",
@@ -457,6 +487,7 @@ let kidsBoys = [
     ],
   },
   {
+    id: 31,
     brand: "FAME FOREVER KIDS",
     category: "Denim Shirt",
     price: "300",
@@ -473,6 +504,7 @@ let kidsBoys = [
 ];
 let mensTopwear = [
   {
+    id: 32,
     brand: "POLO",
     category: "T-shirt",
     price: "849",
@@ -485,6 +517,7 @@ let mensTopwear = [
     ],
   },
   {
+    id: 33,
     brand: "LOUIS PHILIPPE",
     category: "Casual Shirt",
     price: "2799",
@@ -497,6 +530,7 @@ let mensTopwear = [
     ],
   },
   {
+    id: 34,
     brand: "UCLA",
     category: "T-Shirt",
     price: "899",
@@ -509,6 +543,7 @@ let mensTopwear = [
     ],
   },
   {
+    id: 35,
     brand: "POLO",
     category: "T-shirt",
     price: "1199",
@@ -524,6 +559,7 @@ let mensTopwear = [
 
 let menBottomwear = [
   {
+    id: 36,
     brand: "WRANGLER",
     category: "Jeans",
     price: "2096",
@@ -536,6 +572,7 @@ let menBottomwear = [
     ],
   },
   {
+    id: 37,
     brand: "LOUIS PHILIPPE ",
     category: "Trousers",
     price: "1799",
@@ -548,6 +585,7 @@ let menBottomwear = [
     ],
   },
   {
+    id: 38,
     brand: "CODE",
     category: "Trousers",
     price: "1104",
@@ -560,6 +598,7 @@ let menBottomwear = [
     ],
   },
   {
+    id: 39,
     brand: "KAPPA",
     category: "Track Pants",
     price: "849",
@@ -574,6 +613,7 @@ let menBottomwear = [
 ];
 let menActivewear = [
   {
+    id: 40,
     brand: "KAPPA ",
     category: "Shorts",
     price: "699",
@@ -586,6 +626,7 @@ let menActivewear = [
     ],
   },
   {
+    id: 41,
     brand: "KAPPA",
     category: "Track Pants",
     price: "849",
@@ -598,6 +639,7 @@ let menActivewear = [
     ],
   },
   {
+    id: 42,
     brand: "PUMA",
     category: "Track Pants",
     price: "2499",
@@ -610,6 +652,7 @@ let menActivewear = [
     ],
   },
   {
+    id: 43,
     brand: "KAPPA",
     category: "Shorts",
     price: "849",
@@ -625,6 +668,7 @@ let menActivewear = [
 
 let Shoes = [
   {
+    id: 44,
     brand: "FILA",
     category: "sports shoes",
     price: "1499",
@@ -638,6 +682,7 @@ let Shoes = [
     ],
   },
   {
+    id: 45,
     brand: "FILA",
     category: "sports shoes",
     price: "1819",
@@ -651,6 +696,7 @@ let Shoes = [
     ],
   },
   {
+    id: 46,
     brand: "ADIDAS",
     category: "sports shoes",
     price: "4299",
@@ -664,6 +710,7 @@ let Shoes = [
     ],
   },
   {
+    id: 47,
     brand: "ADIDAS",
     category: "sports shoes",
     price: "4999",
@@ -677,6 +724,7 @@ let Shoes = [
     ],
   },
   {
+    id: 48,
     brand: "REEBOK",
     category: "sports shoes",
     price: "3799",
@@ -690,6 +738,7 @@ let Shoes = [
     ],
   },
   {
+    id: 49,
     brand: "CODE",
     category: "loffers",
     price: "1549",
@@ -703,6 +752,7 @@ let Shoes = [
     ],
   },
   {
+    id: 50,
     brand: "CODE",
     category: "loffers",
     price: "2049",
@@ -716,6 +766,7 @@ let Shoes = [
     ],
   },
   {
+    id: 51,
     brand: "CODE",
     category: "sandals",
     price: "1049",
@@ -729,6 +780,7 @@ let Shoes = [
     ],
   },
   {
+    id: 52,
     brand: "CODE",
     category: "sandals",
     price: "1299",
@@ -745,6 +797,7 @@ let Shoes = [
 
 let WomenBottoms = [
   {
+    id: 53,
     brand: "GINGER",
     category: " Cropped Jeans",
     price: "699",
@@ -757,6 +810,7 @@ let WomenBottoms = [
     ],
   },
   {
+    id: 54,
     brand: "GINGER",
     category: "Jeans",
     price: "899",
@@ -769,6 +823,7 @@ let WomenBottoms = [
     ],
   },
   {
+    id: 55,
     brand: "GINGER",
     category: "Jeans",
     price: "449",
@@ -781,6 +836,7 @@ let WomenBottoms = [
     ],
   },
   {
+    id: 56,
     brand: "CODE",
     category: "Trousers",
     price: "1049",
@@ -889,13 +945,12 @@ function showProducts(data) {
 
       let flag = 0;
       checkInBasket.forEach(({ brand, category, price, img }) => {
-  
         if (
-            brand == item.brand &&
-            category == item.category &&
-            price == item.price &&
-            img[0] == item.img[0]
-            ) {
+          brand == item.brand &&
+          category == item.category &&
+          price == item.price &&
+          img[0] == item.img[0]
+        ) {
           flag = 1;
         }
       });
@@ -937,6 +992,8 @@ productBasket.addEventListener("click", function () {
 function storeInObject(selectedColor, selectedSize, item, buttonClicked) {
   if (selectedSize != "" && selectedColor != "" && buttonClicked) {
     let product = {
+      id: item.id,
+      qty: 1,
       brand: item.brand,
       category: item.category,
       color: selectedColor,
