@@ -1,87 +1,95 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #FFFFFF;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #ffffff;
+}
+
+.logoOnBasket {
+    background: url("https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/Sprite_icons.svg") -95px -176px;
 }
 
 #topHeading {
-    margin: auto;
-    width: 80%;
+  margin: auto;
+  width: 80%;
 }
 
 #topHeading h4 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 #offer1 {
-    background-color: rgb(245, 163, 176);
-    color: white;
-    padding: 0.3em;
+  background-color: rgb(245, 163, 176);
+  color: white;
+  padding: 0.3em;
 
-    cursor: pointer;
-    font-weight: 500;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 #basketItems {
-    margin: auto;
-    width: 80%;
-    height: auto;
+  margin: auto;
+  width: 80%;
+  height: auto;
 }
 
 #basketItems img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #basketItems select {
-    border: 1px solid #ECEDEB;
-    padding: 3%;
+  border: 1px solid #ecedeb;
+  padding: 3%;
 
-    width: 100%;
-
+  width: 100%;
 }
 
-table, th, td {
-    /* border: 1px solid black; */
+table,
+th,
+td {
+  /* border: 1px solid black; */
+}
+
+td {
+  padding: 0.5em;
 }
 
 #container {
+  box-sizing: border-box;
 
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 80% 20%;
 
-    display: grid;
-    grid-template-columns: 80% 20%;
-
-    /* gap: 1%; */
-    padding: 3%;
+  /* gap: 1%; */
+  padding: 3%;
 }
 
 #addToCartBtn {
-    margin: auto;
-    border: none;
-    /* border: 1px solid black; */
+  margin: auto;
+  border: none;
+  /* border: 1px solid black; */
 
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    padding: 3%;
-    border-radius: 2%;
-    
-    background-color: #FAA81E;
-    color: white;
+  padding: 3%;
+  border-radius: 2%;
+
+  background-color: #faa81e;
+  color: white;
 }
 
 #checkoutPanel {
-    margin-left: 0;
-    text-align: center;
+  margin-left: 0;
+  text-align: center;
 }
 
 hr {
-    height: 1px;
-    border: 0;
-    border-top: 0.1em solid rgb(236, 237, 235);
-    /* border-color: white; */
-    width: 80%;
-    border-radius: 3%;
+  height: 1px;
+  border: 0;
+  border-top: 0.1em solid rgb(236, 237, 235);
+  /* border-color: white; */
+  width: 80%;
+  border-radius: 3%;
 }
