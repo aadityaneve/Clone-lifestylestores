@@ -1,6 +1,6 @@
 # Lifestylestores (Clone)
 -----
-
+### For Educational And Learning Purpose*
 Project: make a clone of https://www.lifestylestores.com/in/en site
 
 This is an E-Commerce website which speciaizes in selling clothes and styling products. The website provides 800 brands and 33,000 products of different types of clothes, watches, sunglasses, shoes etc.
