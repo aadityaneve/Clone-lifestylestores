@@ -5,7 +5,7 @@ Project: make a clone of Lifestylestores website.
 
 Original-Website: https://www.lifestylestores.com/in/en
 
-Cloned-Website: 
+Cloned-Website: https://aadityaneve.github.io/Clone-lifestylestores
 
 This is an E-Commerce website which speciaizes in selling clothes and styling products. The website provides 800 brands and 33,000 products of different types of clothes, watches, sunglasses, shoes etc.
 
